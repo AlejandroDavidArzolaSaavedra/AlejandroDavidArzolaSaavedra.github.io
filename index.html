@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>¿Me perdonas?</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #FADBD8; /* Color de fondo romántico */
+    }
+    #container {
+      text-align: center;
+    }
+    #mensaje {
+      font-size: 28px; /* Aumento de tamaño */
+      font-weight: bold; /* Texto en negrita */
+      margin-bottom: 20px;
+      color: #C0392B; /* Color de texto */
+    }
+    #botones {
+      display: flex;
+      justify-content: center;
+    }
+    button {
+      margin: 0 10px;
+      padding: 10px 20px;
+      font-size: 18px;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      color: white;
+    }
+    #noBtn {
+      background-color: #E74C3C; /* Cambio a color rojo más claro */
+    }
+    button#siBtn {
+      background-color: #27AE60; /* Cambio a color verde más claro */
+    }
+    button:hover {
+      background-color: #58D68D; /* Color de fondo al pasar el ratón */
+    }
+    #imagen {
+      display: none;
+      margin-top: 20px;
+    }
+    .heart {
+      position: absolute;
+      animation: fall 2s linear forwards;
+      transform-origin: 50% 0;
+    }
+    @keyframes fall {
+      0% {
+        transform: translateY(0) rotate(0);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(300px) rotate(360deg);
+        opacity: 0;
+      }
+    }
+
+    /* Estilos para dispositivos con un ancho máximo de 768px */
+    @media screen and (max-width: 768px) {
+      #mensaje {
+        font-size: 24px;
+      }
+      button {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div id="mensaje">¿Me perdonas?</div>
+    <div id="botones">
+      <button id="siBtn">Sí</button>
+      <button id="noBtn">No</button>
+    </div>
+    <img id="imagen" src="https://i.imgur.com/yLwv2ml.gif" alt="Imagen de perdón">
+  </div>
+  
+  <script>
+    const mensaje = document.getElementById('mensaje');
+    const siBtn = document.getElementById('siBtn');
+    const noBtn = document.getElementById('noBtn');
+    const imagen = document.getElementById('imagen');
+
+    noBtn.addEventListener('click', () => {
+      const respuestas = [
+        "Di que sí maldita!!!",
+        "Te quiero amor",
+        "Te perdono",
+        "Claro que sí amor",
+        "Con lo que yo te quiero",
+        "eres el amor de mi vida",
+        "Di q siiii!!!",
+      ];
+      const index = Math.floor(Math.random() * respuestas.length);
+      siBtn.textContent = respuestas[index];
+    });
+
+    siBtn.addEventListener('click', () => {
+      mensaje.textContent = "Te quiero mi vida ❤️"; // Cambio de texto a "Te quiero mi vida ❤️"
+      siBtn.style.display = 'none';
+      noBtn.style.display = 'none';
+      imagen.style.display = 'inline';
+    });
+
+    // Mostrar corazón al hacer clic en cualquier lugar de la página
+    document.addEventListener('click', function(event) {
+      const heartIcon = document.createElement('span');
+      heartIcon.innerHTML = '❤️';
+      heartIcon.classList.add('heart');
+      heartIcon.style.left = event.pageX + 'px';
+      heartIcon.style.top = event.pageY + 'px';
+      document.body.appendChild(heartIcon);
+
+      setTimeout(() => {
+        heartIcon.remove();
+      }, 2000);
+    });
+  </script>
+</body>
+</html>
