@@ -1,136 +1,160 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>¿Me perdonas ?</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-    }
-    #container {
-      text-align: center;
-    }
-    #mensaje {
-      font-size: 28px; /* Aumento de tamaño */
-      font-weight: bold; /* Texto en negrita */
-      margin-bottom: 20px;
-      color: #C0392B; /* Color de texto */
-    }
-    #botones {
-      display: flex;
-      justify-content: center;
-    }
-    button {
-      margin: 0 10px;
-      padding: 10px 20px;
-      font-size: 18px;
-      cursor: pointer;
-      border: none;
-      border-radius: 5px;
-      color: white;
-      transition: transform 0.1s; /* Transición suave */
-    }
-    #noBtn {
-      background-color: #E74C3C; /* Cambio a color rojo más claro */
-    }
-    button#siBtn {
-      background-color: #27AE60; /* Cambio a color verde más claro */
-    }
-    button:hover {
-      background-color: #58D68D; /* Color de fondo al pasar el ratón */
-    }
-    #imagen {
-      display: none;
-	  width: 500px;
-      margin-top: 20px;
-    }
-    .heart {
-      position: absolute;
-      animation: fall 2s linear forwards;
-      transform-origin: 50% 0;
-    }
-    @keyframes fall {
-      0% {
-        transform: translateY(0) rotate(0);
-        opacity: 1;
-      }
-      100% {
-        transform: translateY(300px) rotate(360deg);
-        opacity: 0;
-      }
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 
-    /* Estilos para dispositivos con un ancho máximo de 768px */
-    @media screen and (max-width: 768px) {
-      #mensaje {
-        font-size: 24px;
-      }
-      button {
-        font-size: 16px;
-      }
-    }
-  </style>
 </head>
 <body>
-  <div id="container">
-    <div id="mensaje">¿Me perdonas?</div>
-    <div id="botones">
-      <button id="siBtn">Sí</button>
-      <button id="noBtn">No</button>
-    </div>
-    <img id="imagen" src="https://i.imgur.com/eZfC7Js.gif" alt="Imagen de perdón">
-  </div>
+    <header>
+        <div class="container">
+            <h1>Alejandro D. Arzola Saavedra</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">Perfil</a></li>
+                    <li><a href="#projects">Proyectos</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="bento" style="margin-top: 7rem;">
+      <section id="about" class="bento-box text-center">
+        <h2 class="mb-4">Sobre Mí</h2>
+        <p style="text-align: left; margin-bottom: 0.5rem;">
+            Desarrollador de software especializado en <span class="highlight">aplicaciones web y móviles </span>💻📱, con un enfoque en <span class="highlight">inteligencia artificial</span> 📈 y <span class="highlight">cloud computing</span> ☁️. <br> 
+        </p>
+        <p style="text-align: left;">Soy ese sí, el que cuando no hay solucion, soluciona los problemas; disponible tanto <span class="highlight">presencial</span> como <span class="highlight">en remoto</span>.</p>
+    </section>
+      
+      <section id="about" class="bento-box">
+            <h2>Software developer</h2>
+            <img src="static/profile.png" alt="Foto de Alejandro" class="profile-pic">
+            <p style="font-family: cursive;">"Para poder ganar aveces hay que arriesgarse"</p>
+        </section>
+
+        <section id="experience" class="bento-box">
+            <h2>Experiencia</h2>
+            <div class="project" style="text-align: left;">
+                <h5>Prof. particular de programacion Web</h3>
+                <p>Impatiendo clases online y presenciales sobre las bases de la programación web con Angular y Javascript</p>
+            </div>
+            <div class="project" style="text-align: left;">
+                <h5>Aux. Administrativo en Domingo Alonso</h3>
+                <p>Desempeñé funciones clave en la gestión administrativa de la empresa, incluyendo la organización y archivo de documentos, atención al cliente, y soporte en tareas contables. </p>
+            </div>
+            <!-- Añade más experiencias según sea necesario -->
+        </section>
+
+        
+        <div class="container my-4">
+          <h3 class="mb-4 text-2xl font-semibold fw-bold" id="projects">Projectos Recientes</h3>
+          <div class="cards-Projects">
+              <div class="position-relative custom-card rounded-4 shadow-md" style="background-image:url('https://github.com/AlejandroDavidArzolaSaavedra/AlejandroDavidArzolaSaavedra/assets/90756437/547eaf0f-7fea-43a2-a1f2-33d2daa9994f')">
+                  <div class="card-overlay">
+                      <span class="text-uppercase text-violet-300 small fw-semibold">Tensorflow. OpenCV y Scikit Learn</span>
+                      <p class="card-title my-2">👨‍⚕️ CNN-CT-BRAIN</p>
+                      <p class="card-text">Proyecto en Python que emplea redes convolucionales (CNN) para clasificar enfermedades cerebrales como cáncer, tumores y aneurismas.</p>
+                  </div>
+              </div>
+              <div class="position-relative custom-card rounded-4 shadow-md" style="background-image:url('https://github.com/user-attachments/assets/e74b11a5-765a-4b65-b7c0-ac18f872dc44');">
+                  <div class="card-overlay">
+                      <span class="text-uppercase text-violet-300 small fw-semibold">Android </span>
+                      <p class="card-title my-2">🎶 TuneWave</p>
+                      <p class="card-text">App musical de android  usando jectpack compose, firebase, dagger hilt, retrofit, MVVM para los amantes de la musica.</p>
+                  </div>
+              </div>
+              <div class="position-relative custom-card rounded-4 shadow-md" style="background-image:url('https://github.com/AlejandroDavidArzolaSaavedra/Vehicle-Management-App/assets/90756437/3c76a07d-372c-42ec-9458-697d885dc6e9');">
+                  <div class="card-overlay">
+                      <span class="text-uppercase text-violet-300 small fw-semibold">Angular, IONIC, Firebase y Bootstrap 
+                      </span>
+                      <p class="card-title my-2">Gestion de Vehiculos</p>
+                      <p class="card-text">Una pagina para el manejo y mantenimiento de vehiculos donde el usuario puede consultar gasolineras cercanas en Gran Canaria</p>
+                  </div>
+              </div>
+          </div>
+      </div>
   
-  <script>
-    const mensaje = document.getElementById('mensaje');
-    const siBtn = document.getElementById('siBtn');
-    const noBtn = document.getElementById('noBtn');
-    const imagen = document.getElementById('imagen');
 
-    let enlargeFactor = 1;
 
-    noBtn.addEventListener('click', () => {
-      const respuestas = [
-        "Di que sí maldita!!!",
-        "Te quiero amor",
-        "Te perdono",
-        "Claro que sí amor",
-        "Con lo que yo te quiero",
-        "eres el amor de mi vida",
-        "Di q siiii!!!",
-      ];
-      const index = Math.floor(Math.random() * respuestas.length);
-      siBtn.style.transform = `scale(${1 + enlargeFactor * 0.1})`; // Aumentar el tamaño del botón
-      enlargeFactor++; // Incrementar el factor de agrandamiento
-      siBtn.textContent = respuestas[index];
-    });
+        <section id="time-Watch" class="bento-box">
+            <div style="text-align:center;padding:1em 0;"> <h3><a style="text-decoration:none;" href="https://www.zeitverschiebung.net/es/city/2515270"><span style="color:gray;">Hora actual en</span><br />Las Palmas de Gran Canaria, España</a></h3> <iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=es&size=medium&timezone=Atlantic%2FCanary" width="100%" height="115" frameborder="0" seamless></iframe> </div>
+        </section>
 
-    siBtn.addEventListener('click', () => {
-      mensaje.textContent = "Te quiero mi vida ❤️"; // Cambio de texto a "Te quiero mi vida ❤️"
-      siBtn.style.display = 'none';
-      noBtn.style.display = 'none';
-      imagen.style.display = 'inline';
-    });
+        <section id="technologies" class="bento-box">
+            <h2>Tecnologías</h2>
+            <div class="technologies">
+                <img class="responsive" src="https://camo.githubusercontent.com/b9863535c10cdbe40db8ea8dbfa502d32d15665f26798639196ba7282d12c65e/68747470733a2f2f736b696c6c69636f6e732e6465762f69636f6e733f693d6769742c6a6176612c626f6f7473747261702c616e67756c61722c626173682c66697265626173652c707974686f6e2c6c617465782c6769746875622c68746d6c2c6373732c6a732c6c696e75782c74656e736f72666c6f772c722c6177732c616e64726f696473747564696f2c7079746f7263682c61726475696e6f2c63267065726c696e653d3130" alt="Tecnologías de desarrollo"/>
+            <!--
+                FRONT
+                
+                https://skillicons.dev/icons?i=astro,bootstrap,jquery,angular,ts,react,bash,tailwind,wordpress,html,css,js,&perline=6
+                
+                BACKEND
+                https://skillicons.dev/icons?i=java,redux,cs,dotnet,docker,mysql,postgres,sqlite,firebase,c&perline=10
 
-    // Mostrar corazón al hacer clic en cualquier lugar de la página
-    document.addEventListener('click', function(event) {
-      const heartIcon = document.createElement('span');
-      heartIcon.innerHTML = '❤️';
-      heartIcon.classList.add('heart');
-      heartIcon.style.left = event.pageX + 'px';
-      heartIcon.style.top = event.pageY + 'px';
-      document.body.appendChild(heartIcon);
+                IA + CLOUD
 
-      setTimeout(() => {
-        heartIcon.remove();
-      }, 2000);
-    });
+                https://skillicons.dev/icons?i=opencv,sklearn,r,md,threejs,python,tensorflow,aws,pytorch&perline=9
+
+                Plataforma con tecnologias
+
+                https://skillicons.dev/icons?i=git,obsidian,figma,notion,kotlin,eclipse,netlify,pycharm,redhat,ubuntu,vscode,webstorm,windows,latex,github,linux,androidstudio,arduino,unity&perline=10
+
+            -->
+            </div>
+        </section>
+
+        <section id="contact" class="bento-box">
+            <img src="https://raw.githubusercontent.com/AlejandroDavidArzolaSaavedra/AlejandroDavidArzolaSaavedra/main/octocat.gif" style="width: 200px; display: inline-block;" alt="Emoji de perfil">
+            <h2>Contacto</h2>
+            <p style="font-size: 0,145rem; margin-bottom: 0;">No dudes en contactarme si tienes alguna pregunta o quieres trabajar juntos.</p>
+            <div class="social">
+                <a href="mailto:alejandrodas15perfecto@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/alejandro-david-arzola-saavedra" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/AlejandroDavidArzolaSaavedra" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Alejandro David Arzola Saavedra. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+        <!-- Botón "Subir" -->
+        <div id="back-to-top">
+          ↑
+      </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+          const backToTopButton = document.getElementById('back-to-top');
+
+          window.addEventListener('scroll', function() {
+
+              if (window.scrollY > 200) {
+                  backToTopButton.style.display = 'block';
+              } else {
+                  backToTopButton.style.display = 'none';
+              }
+          });
+
+          backToTopButton.addEventListener('click', function() {
+              window.scrollTo({
+                  top: 0,
+                  behavior: 'smooth'
+              });
+          });
+        });
   </script>
-</body>
+  </body>
 </html>
