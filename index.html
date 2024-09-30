@@ -171,19 +171,6 @@
                   behavior: 'smooth'
               });
           });
-          window.onload = function () {
-            var ln = navigator.language || navigator.userLanguage;
-            var pagActual = window.location.pathname;
-
-            if (!sessionStorage.getItem('redirected')) {
-                if (ln === 'es-419') {
-                    window.location.href = 'index.html';
-                } else {
-                    window.location.href = 'indexEn.html';
-                }
-                sessionStorage.setItem('redirected', 'true');
-            }
-        };
         });
 </script>
 </body>
