@@ -851,12 +851,6 @@
         const themeToggle = document.getElementById('themeToggle');
        const html = document.documentElement;
         
-        if (localStorage.getItem('theme') === 'dark' || (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-            html.classList.add('dark');
-          } else {
-            html.classList.remove('dark');
-        }
-        
         function toggleAccordion(id) {
             const content = document.getElementById(`${id}-content`);
             const arrow = document.getElementById(`${id}-arrow`);
@@ -942,6 +936,11 @@
             if (hours >= 18 && hours < 6) {
                 icon.innerHTML = "<img src='https://cdn-icons-png.flaticon.com/512/9116/9116660.png' alt='Weather Icon' style='width: 100px; height: 100px;'>";
             }
+        }
+        if (localStorage.getItem('theme') === 'dark' || (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            html.classList.add('dark');
+          } else {
+            html.classList.remove('dark');
         }
     }
     updateTimeWidget();
