@@ -1,950 +1,831 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Mi portfolio Alejandro David Arzola Saavedra">
-    <meta name="view-transition" content="same-origin" />
-    <meta name="keywords" content="Portafolio, perfil, github, desarrollador, web">
-    <meta name="author" content="Alejandro David Arzola Saavedra">
-    <meta name="copyright" content="Alejandro David Arzola Saavedra">
-    <link rel="icon" type="image/x-icon" href="profile.ico">
 
-    <title>Alejandro D. Arzola</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="icon" type="image/x-icon" href="profile.ico">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-   <script>
-        tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
-                    maxHeight: {
-        '1000': '1000px'
-      },
-                    colors: {
-                        primary: {
-                            50: '#f0f9ff',
-                            100: '#e0f2fe',
-                            200: '#bae6fd',
-                            300: '#7dd3fc',
-                            400: '#38bdf8',
-                            500: '#0ea5e9',
-                            600: '#0284c7',
-                            700: '#0369a1',
-                            800: '#075985',
-                            900: '#0c4a6e',
-                        }
-                    }
-                }
-            }
-        }
-    </script>
-    <style>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Mi portfolio Alejandro David Arzola Saavedra">
+	<meta name="view-transition" content="same-origin" />
+	<meta name="keywords" content="Portafolio, perfil, github, desarrollador, web">
+	<meta name="author" content="Alejandro David Arzola Saavedra">
+	<meta name="copyright" content="Alejandro David Arzola Saavedra">
+	<link rel="icon" type="image/x-icon" href="profile.ico">
 
-      
-.hover-underline {
-  font-size: 2rem;
-  position: relative;
-  display: inline-block;
-}
-
-.hover-underline-desarrollo::after,
-.hover-underline-desarrollo::before {
-  background: linear-gradient(to right, #7ba7ed, #78c3f3, #06b6d4);
-}
-
-.hover-underline-ia::after,
-.hover-underline-ia::before {
-  background: linear-gradient(to right, #49ff83, #92fea6, #3af46e);
-}
-
-.hover-underline-movil::after,
-.hover-underline-movil::before {
-  background: linear-gradient(to right, #961cd8, #c891d0, #ca31e2);
-}
-
-.hover-underline::after,
-.hover-underline::before {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  bottom: -5px;
-  left: 0;
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform 0.4s ease-out;
-}
-
-.hover-underline::before {
-  top: -5px;
-  transform-origin: left;
-}
-
-.hover-underline:hover::after,
-.hover-underline:hover::before {
-  transform: scaleX(1);
-}
-.track-card:hover .hover-underline::after,
-.track-card:hover .hover-underline::before {
-  transform: scaleX(1);
-}
-        .progress-bar {
-            transition: width 0.5s ease-in-out;
-        }
-        .track-card {
-            transition: all 0.3s ease;
-            border: 1px solid #e5e7eb;
-        }
-        .track-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-            border-color: #3b82f6;
-        }
-        .dark .track-card {
-            border-color: #374151;
-        }
-        .dark .track-card:hover {
-            border-color: #60a5fa;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-        }
-        .accordion-content {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.3s ease-out;
-        }
-        .accordion-content.show {
-            max-height: 1000px;
-        }
-        .course-card {
-            transition: all 0.2s ease;
-            border: 1px solid #e5e7eb;
-        }
-        .course-card:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-            border-color: #3b82f6;
-        }
-        .dark .course-card {
-            border-color: #374151;
-            background-color: #1f2937;
-        }
-        .dark .course-card:hover {
-            border-color: #60a5fa;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-        }
-        .gradient-bg {
-            background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #d946ef 100%);
-        }
-        .dark .gradient-bg {
-            background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 50%, #c026d3 100%);
-        }
-    </style>
+	<title>Alejandro D. Arzola</title>
+	<script src="https://cdn.tailwindcss.com"></script>
+	<link rel="icon" type="image/x-icon" href="profile.ico">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<script>
+		tailwind.config = {
+		            darkMode: 'class',
+		            theme: {
+		                extend: {
+		                    maxHeight: {
+		        '1000': '1000px'
+		      },
+		                    colors: {
+		                        primary: {
+		                            50: '#f0f9ff',
+		                            100: '#e0f2fe',
+		                            200: '#bae6fd',
+		                            300: '#7dd3fc',
+		                            400: '#38bdf8',
+		                            500: '#0ea5e9',
+		                            600: '#0284c7',
+		                            700: '#0369a1',
+		                            800: '#075985',
+		                            900: '#0c4a6e',
+		                        }
+		                    }
+		                }
+		            }
+		        }
+		
+	</script>
+	<style>
+		.hover-underline {
+		  font-size: 2rem;
+		  position: relative;
+		  display: inline-block;
+		}
+		
+		.hover-underline-desarrollo::after,
+		.hover-underline-desarrollo::before {
+		  background: linear-gradient(to right, #7ba7ed, #78c3f3, #06b6d4);
+		}
+		
+		.hover-underline-ia::after,
+		.hover-underline-ia::before {
+		  background: linear-gradient(to right, #49ff83, #92fea6, #3af46e);
+		}
+		
+		.hover-underline-movil::after,
+		.hover-underline-movil::before {
+		  background: linear-gradient(to right, #961cd8, #c891d0, #ca31e2);
+		}
+		
+		.hover-underline::after,
+		.hover-underline::before {
+		  content: '';
+		  position: absolute;
+		  width: 100%;
+		  height: 2px;
+		  bottom: -5px;
+		  left: 0;
+		  transform: scaleX(0);
+		  transform-origin: right;
+		  transition: transform 0.4s ease-out;
+		}
+		
+		.hover-underline::before {
+		  top: -5px;
+		  transform-origin: left;
+		}
+		
+		.hover-underline:hover::after,
+		.hover-underline:hover::before {
+		  transform: scaleX(1);
+		}
+		.track-card:hover .hover-underline::after,
+		.track-card:hover .hover-underline::before {
+		  transform: scaleX(1);
+		}
+		        .progress-bar {
+		            transition: width 0.5s ease-in-out;
+		        }
+		        .track-card {
+		            transition: all 0.3s ease;
+		            border: 1px solid #e5e7eb;
+		        }
+		        .track-card:hover {
+		            transform: translateY(-5px);
+		            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+		            border-color: #3b82f6;
+		        }
+		        .dark .track-card {
+		            border-color: #374151;
+		        }
+		        .dark .track-card:hover {
+		            border-color: #60a5fa;
+		            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+		        }
+		        .accordion-content {
+		            max-height: 0;
+		            overflow: hidden;
+		            transition: max-height 0.3s ease-out;
+		        }
+		        .accordion-content.show {
+		            max-height: 1000px;
+		        }
+		        .course-card {
+		            transition: all 0.2s ease;
+		            border: 1px solid #e5e7eb;
+		        }
+		        .course-card:hover {
+		            transform: translateY(-2px);
+		            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+		            border-color: #3b82f6;
+		        }
+		        .dark .course-card {
+		            border-color: #374151;
+		            background-color: #1f2937;
+		        }
+		        .dark .course-card:hover {
+		            border-color: #60a5fa;
+		            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+		        }
+		        .gradient-bg {
+		            background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #d946ef 100%);
+		        }
+		        .dark .gradient-bg {
+		            background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 50%, #c026d3 100%);
+		        }
+		
+	</style>
 </head>
 <body class="bg-gray-50 dark:bg-gray-900 font-sans transition-colors duration-200" style="padding: 20px;">
-    <!-- Alnieamos a la derecha la hora-->
-    <div class="container mx-auto px-4 py-8">
-        
-        <!-- Header -->
-        <header class="flex justify-between items-center mb-12">
-            <div>
-                <h1 class="text-4xl font-bold text-primary-600 dark:text-primary-400">Desarrollador de Software</h1>
-                <p class="text-gray-600 dark:text-gray-300" style="font-family: cursive;">"Para poder ganar aveces hay que arriesgarse"</p>
-            </div>
-            <i id="themeIcon"></i>
-            </header>
+	<div class="container mx-auto px-4 py-8">
 
-        <!-- User Profile -->
-        <div class="user-profile bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 mb-8 transition-colors duration-200">
+		<header class="flex justify-between items-center mb-12">
+			<div>
+				<h1 class="text-4xl font-bold text-primary-600 dark:text-primary-400">Desarrollador de Software</h1>
+				<p class="text-gray-600 dark:text-gray-300" style="font-family: cursive;">"Para poder ganar aveces hay que arriesgarse"</p>
+			</div>
+			<i id="themeIcon"></i>
+		</header>
 
-            <div class="flex flex-col md:flex-row items-center">
-                <div class="w-36 h-36 rounded-full bg-primary-100 dark:bg-primary-900 flex items-center justify-center mb-4 md:mb-0 md:mr-6">
-                    <a href="https://github.com/AlejandroDavidArzolaSaavedra">
-                        <img aria-label="Foto de Perfil" title="Foto de Perfil" src="https://avatars.githubusercontent.com/u/90756437?v=4" alt="Foto de Perfil" class="rounded-full w-full h-full object-cover shadow-md shadow-primary-100 ">
-                    </a>
-                </div>
-                <div class="flex-1">
-                    <h2 class="text-2xl font-semibold dark:text-gray-100">Alejandro David Arzola Saavedra</h2>
-                    <div class="mt-2">
-                      <div class="flex justify-between mb-1">
-                        <div class="social flex gap-2">
-                          <!-- CV -->
-                          <a href="https://drive.google.com/file/d/1JusVbqjNTkq_jp2xSgQiA5W2jZ_McjC9/view?usp=sharing"
-                             target="_blank" 
-                             aria-label="Currículum Vitae" 
-                             title="Currículum Vitae"
-                             class="group relative w-12 h-12 flex items-center justify-center border-2 border-white rounded-full overflow-hidden transition-all duration-500 hover:rotate-[360deg]">
-                            <span class="absolute inset-0 bg-red-600 translate-y-full group-hover:translate-y-0 transition-all duration-500 z-0"></span>
-                            <i class="fa-solid fa-file-pdf text-xl text-gray-800 dark:text-gray-300 group-hover:text-white z-10 transition-all duration-500"></i>
-                          </a>
-                    
-                          <!-- Email -->
-                          <a href="mailto:alejandrodas15perfecto@gmail.com"
-                             target="_blank"
-                             aria-label="Correo electrónico"
-                             title="Correo electrónico"
-                             class="group relative w-12 h-12 flex items-center justify-center border-2 border-white rounded-full overflow-hidden transition-all duration-500 hover:rotate-[360deg]">
-                            <span class="absolute inset-0 bg-green-500 translate-y-full group-hover:translate-y-0 transition-all duration-500 z-0"></span>
-                            <i class="fa-solid fa-envelope text-xl text-gray-800 dark:text-gray-300 group-hover:text-white z-10 transition-all duration-500"></i>
-                          </a>
-                    
-                          <!-- LinkedIn -->
-                          <a href="https://www.linkedin.com/in/alejandro-david-arzola-saavedra"
-                             target="_blank"
-                             aria-label="Perfil de LinkedIn"
-                             title="Perfil de LinkedIn"
-                             class="group relative w-12 h-12 flex items-center justify-center border-2 border-white rounded-full overflow-hidden transition-all duration-500 hover:rotate-[360deg]">
-                            <span class="absolute inset-0 bg-blue-700 translate-y-full group-hover:translate-y-0 transition-all duration-500 z-0"></span>
-                            <i class="fab fa-linkedin text-xl text-gray-800 dark:text-gray-300 group-hover:text-white z-10 transition-all duration-500"></i>
-                          </a>
-                    
-                          <!-- GitHub -->
-                          <a href="https://github.com/AlejandroDavidArzolaSaavedra"
-                             target="_blank"
-                             aria-label="Perfil de GitHub"
-                             title="Perfil de GitHub"
-                             class="group relative w-12 h-12 flex items-center justify-center border-2 border-white rounded-full overflow-hidden transition-all duration-500 hover:rotate-[360deg]">
-                            <span class="absolute inset-0 bg-gray-800 translate-y-full group-hover:translate-y-0 transition-all duration-500 z-0"></span>
-                            <i class="fab fa-github text-xl text-gray-800 dark:text-gray-300 group-hover:text-white z-10 transition-all duration-500"></i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                    
-                </div>
-                <section idt="time-Watch" class=" flex-1 mt-4 md:mt-0 md:ml-6 rounded-lg" style="align-items: end; justify-content: end; display: flex; flex-direction: column; gap: 10px;">
-                    <div id="time-widget" class="flex p-4 rounded-lg">
-                        <div>
-                            <div id="weather-icon" style="display: inline-block; font-size:5rem;"></div>
-                            <div style="display: inline-block;">
-                            <h3 class="text-xl font-semibold dark:text-gray-300" style="margin: 0; font-size: 1.2em;">Hora actual en</h3>
-                            <h2 class="text-xl font-semibold dark:text-gray-300" style="margin: 0.2em 0;">Las Palmas de Gran Canaria (Canarias)</h2>
-                            <p  class="text-xl font-semibold dark:text-gray-300" id="current-time" style="font-size: 2em; margin: 0;"></p>
-                        </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </div>
+		<div class="user-profile bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 mb-8 transition-colors duration-200">
 
+			<div class="flex flex-col md:flex-row items-center">
+				<div class="w-36 h-36 rounded-full bg-primary-100 dark:bg-primary-900 flex items-center justify-center mb-4 md:mb-0 md:mr-6">
+					<a href="https://github.com/AlejandroDavidArzolaSaavedra">
+						<img aria-label="Foto de Perfil" title="Foto de Perfil" src="https://avatars.githubusercontent.com/u/90756437?v=4" alt="Foto de Perfil" class="rounded-full w-full h-full object-cover shadow-md shadow-primary-100 ">
+					</a>
+				</div>
+				<div class="flex-1">
+					<h2 class="text-2xl font-semibold dark:text-gray-100">Alejandro David Arzola Saavedra</h2>
+					<div class="mt-2">
+						<div class="flex justify-between mb-1">
+							<div class="social flex gap-2">
 
-<!-- Floating Social Icons -->
-<div id="floating-socials"
-     class="fixed bottom-4 right-4 z-50 opacity-0 pointer-events-none transition-opacity duration-700 
+								<a href="https://drive.google.com/file/d/1JusVbqjNTkq_jp2xSgQiA5W2jZ_McjC9/view?usp=sharing" target="_blank" aria-label="Currículum Vitae" title="Currículum Vitae" class="group relative w-12 h-12 flex items-center justify-center border-2 border-white rounded-full overflow-hidden transition-all duration-500 hover:rotate-[360deg]">
+									<span class="absolute inset-0 bg-red-600 translate-y-full group-hover:translate-y-0 transition-all duration-500 z-0"></span>
+									<i class="fa-solid fa-file-pdf text-xl text-gray-800 dark:text-gray-300 group-hover:text-white z-10 transition-all duration-500"></i>
+								</a>
+
+								<a href="mailto:alejandrodas15perfecto@gmail.com" target="_blank" aria-label="Correo electrónico" title="Correo electrónico" class="group relative w-12 h-12 flex items-center justify-center border-2 border-white rounded-full overflow-hidden transition-all duration-500 hover:rotate-[360deg]">
+									<span class="absolute inset-0 bg-green-500 translate-y-full group-hover:translate-y-0 transition-all duration-500 z-0"></span>
+									<i class="fa-solid fa-envelope text-xl text-gray-800 dark:text-gray-300 group-hover:text-white z-10 transition-all duration-500"></i>
+								</a>
+
+								<a href="https://www.linkedin.com/in/alejandro-david-arzola-saavedra" target="_blank" aria-label="Perfil de LinkedIn" title="Perfil de LinkedIn" class="group relative w-12 h-12 flex items-center justify-center border-2 border-white rounded-full overflow-hidden transition-all duration-500 hover:rotate-[360deg]">
+									<span class="absolute inset-0 bg-blue-700 translate-y-full group-hover:translate-y-0 transition-all duration-500 z-0"></span>
+									<i class="fab fa-linkedin text-xl text-gray-800 dark:text-gray-300 group-hover:text-white z-10 transition-all duration-500"></i>
+								</a>
+
+								<a href="https://github.com/AlejandroDavidArzolaSaavedra" target="_blank" aria-label="Perfil de GitHub" title="Perfil de GitHub" class="group relative w-12 h-12 flex items-center justify-center border-2 border-white rounded-full overflow-hidden transition-all duration-500 hover:rotate-[360deg]">
+									<span class="absolute inset-0 bg-gray-800 translate-y-full group-hover:translate-y-0 transition-all duration-500 z-0"></span>
+									<i class="fab fa-github text-xl text-gray-800 dark:text-gray-300 group-hover:text-white z-10 transition-all duration-500"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<section idt="time-Watch" class=" flex-1 mt-4 md:mt-0 md:ml-6 rounded-lg" style="align-items: end; justify-content: end; display: flex; flex-direction: column; gap: 10px;">
+					<div id="time-widget" class="flex p-4 rounded-lg">
+						<div>
+							<div id="weather-icon" style="display: inline-block; font-size:5rem;"></div>
+							<div style="display: inline-block;">
+								<h3 class="text-xl font-semibold dark:text-gray-300" style="margin: 0; font-size: 1.2em;">Hora actual en</h3>
+								<h2 class="text-xl font-semibold dark:text-gray-300" style="margin: 0.2em 0;">Las Palmas de Gran Canaria (Canarias)</h2>
+								<p class="text-xl font-semibold dark:text-gray-300" id="current-time" style="font-size: 2em; margin: 0;"></p>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+
+		<div id="floating-socials" class="fixed bottom-4 right-4 z-50 opacity-0 pointer-events-none transition-opacity duration-700 
             bg-white dark:bg-gray-800 p-3 rounded-full shadow-lg border border-gray-300 dark:border-gray-600">
-  <div class="flex text-xl text-gray-700 dark:text-gray-300  gap-2">
-    
-    <!-- CV -->
-    <a href="https://drive.google.com/file/d/1JusVbqjNTkq_jp2xSgQiA5W2jZ_McjC9/view?usp=sharing"
-       target="_blank"
-       aria-label="Currículum Vitae"
-       title="Currículum Vitae"
-       class="group relative w-10 h-10 flex items-center justify-center border border-white rounded-full overflow-hidden transition-all duration-500 hover:rotate-[360deg]">
-      <span class="absolute inset-0 bg-red-600 translate-y-full group-hover:translate-y-0 transition-all duration-500 z-0"></span>
-      <i class="fa-solid fa-file-pdf text-lg group-hover:text-white z-10 transition-all duration-500"></i>
-    </a>
+			<div class="flex text-xl text-gray-700 dark:text-gray-300  gap-2">
 
-    <!-- Email -->
-    <a href="mailto:alejandrodas15perfecto@gmail.com"
-       target="_blank"
-       aria-label="Correo"
-       title="Correo"
-       class="group relative w-10 h-10 flex items-center justify-center border border-white rounded-full overflow-hidden transition-all duration-500 hover:rotate-[360deg]">
-      <span class="absolute inset-0 bg-green-500 translate-y-full group-hover:translate-y-0 transition-all duration-500 z-0"></span>
-      <i class="fa-solid fa-envelope text-lg group-hover:text-white z-10 transition-all duration-500"></i>
-    </a>
+				<a href="https://drive.google.com/file/d/1JusVbqjNTkq_jp2xSgQiA5W2jZ_McjC9/view?usp=sharing" target="_blank" aria-label="Currículum Vitae" title="Currículum Vitae" class="group relative w-10 h-10 flex items-center justify-center border border-white rounded-full overflow-hidden transition-all duration-500 hover:rotate-[360deg]">
+					<span class="absolute inset-0 bg-red-600 translate-y-full group-hover:translate-y-0 transition-all duration-500 z-0"></span>
+					<i class="fa-solid fa-file-pdf text-lg group-hover:text-white z-10 transition-all duration-500"></i>
+				</a>
 
-    <!-- LinkedIn -->
-    <a href="https://www.linkedin.com/in/alejandro-david-arzola-saavedra"
-       target="_blank"
-       aria-label="LinkedIn"
-       title="LinkedIn"
-       class="group relative w-10 h-10 flex items-center justify-center border border-white rounded-full overflow-hidden transition-all duration-500 hover:rotate-[360deg]">
-      <span class="absolute inset-0 bg-blue-700 translate-y-full group-hover:translate-y-0 transition-all duration-500 z-0"></span>
-      <i class="fab fa-linkedin text-lg group-hover:text-white z-10 transition-all duration-500"></i>
-    </a>
+				<a href="mailto:alejandrodas15perfecto@gmail.com" target="_blank" aria-label="Correo" title="Correo" class="group relative w-10 h-10 flex items-center justify-center border border-white rounded-full overflow-hidden transition-all duration-500 hover:rotate-[360deg]">
+					<span class="absolute inset-0 bg-green-500 translate-y-full group-hover:translate-y-0 transition-all duration-500 z-0"></span>
+					<i class="fa-solid fa-envelope text-lg group-hover:text-white z-10 transition-all duration-500"></i>
+				</a>
 
-    <!-- GitHub -->
-    <a href="https://github.com/AlejandroDavidArzolaSaavedra"
-       target="_blank"
-       aria-label="GitHub"
-       title="GitHub"
-       class="group relative w-10 h-10 flex items-center justify-center border border-white rounded-full overflow-hidden transition-all duration-500 hover:rotate-[360deg]">
-      <span class="absolute inset-0 bg-gray-800 translate-y-full group-hover:translate-y-0 transition-all duration-500 z-0"></span>
-      <i class="fab fa-github text-lg group-hover:text-white z-10 transition-all duration-500"></i>
-    </a>
+				<a href="https://www.linkedin.com/in/alejandro-david-arzola-saavedra" target="_blank" aria-label="LinkedIn" title="LinkedIn" class="group relative w-10 h-10 flex items-center justify-center border border-white rounded-full overflow-hidden transition-all duration-500 hover:rotate-[360deg]">
+					<span class="absolute inset-0 bg-blue-700 translate-y-full group-hover:translate-y-0 transition-all duration-500 z-0"></span>
+					<i class="fab fa-linkedin text-lg group-hover:text-white z-10 transition-all duration-500"></i>
+				</a>
 
-  </div>
-</div>
+				<a href="https://github.com/AlejandroDavidArzolaSaavedra" target="_blank" aria-label="GitHub" title="GitHub" class="group relative w-10 h-10 flex items-center justify-center border border-white rounded-full overflow-hidden transition-all duration-500 hover:rotate-[360deg]">
+					<span class="absolute inset-0 bg-gray-800 translate-y-full group-hover:translate-y-0 transition-all duration-500 z-0"></span>
+					<i class="fab fa-github text-lg group-hover:text-white z-10 transition-all duration-500"></i>
+				</a>
 
+			</div>
+		</div>
 
+		<div class="mb-12">
+			<h2 class="text-2xl font-bold mb-6 dark:text-white">Mis ramas exploradas</h2>
+			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
-<!-- Tracks -->
-<div class="mb-12">
-    <h2 class="text-2xl font-bold mb-6 dark:text-white">Mis ramas exploradas</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        
-        <!-- Frontend Track -->
-        <div class="track-card bg-white dark:bg-gray-800 rounded-xl p-6 shadow-md transition-all duration-300 ease-in-out cursor-pointer hover:shadow-lg hover:ring-4 hover:ring-blue-200 dark:hover:ring-blue-500">
-            <div class="flex items-center mb-4">
-                <div class="w-12 h-12 rounded-full bg-blue-100 dark:bg-blue-900 flex items-center justify-center mr-4">
-                    <i class="fas fa-laptop-code text-blue-500 dark:text-blue-400 text-xl"></i>
-                </div>
-                <h3 class="hover-underline-desarrollo hover-underline text-xl font-semibold dark:text-white">Desarrollo Web</h3>
-            </div>
-            <p class="text-gray-600 dark:text-gray-300 mb-4">Manejo de HTML5, CSS3, Bootstrap, Tailwind, ASP, PostgreSQL, Firebase, SonarQube, JavaScript, Typescript y Angular.</p>
-            <div class="flex justify-between items-center">
-                <a aria-label="Ir al repositorio de GitHub" title="Ir al repositorio de GitHub" href="https://github.com/AlejandroDavidArzolaSaavedra?tab=repositories&q=app&type=public&language=&sort=stargazers" target="_blank" class="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 text-sm font-medium">Repositorio Github</a>
-            </div>
-        </div>
+				<div class="track-card bg-white dark:bg-gray-800 rounded-xl p-6 shadow-md transition-all duration-300 ease-in-out cursor-pointer hover:shadow-lg hover:ring-4 hover:ring-blue-200 dark:hover:ring-blue-500">
+					<div class="flex items-center mb-4">
+						<div class="w-12 h-12 rounded-full bg-blue-100 dark:bg-blue-900 flex items-center justify-center mr-4">
+							<i class="fas fa-laptop-code text-blue-500 dark:text-blue-400 text-xl"></i>
+						</div>
+						<h3 class="hover-underline-desarrollo hover-underline text-xl font-semibold dark:text-white">Desarrollo Web</h3>
+					</div>
+					<p class="text-gray-600 dark:text-gray-300 mb-4">Manejo de HTML5, CSS3, Bootstrap, Tailwind, ASP, PostgreSQL, Firebase, SonarQube, JavaScript, Typescript y Angular.</p>
+					<div class="flex justify-between items-center">
+						<a aria-label="Ir al repositorio de GitHub" title="Ir al repositorio de GitHub" href="https://github.com/AlejandroDavidArzolaSaavedra?tab=repositories&q=app&type=public&language=&sort=stargazers" target="_blank" class="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 text-sm font-medium">Repositorio Github</a>
+					</div>
+				</div>
 
-        <!-- Backend Track -->
-        <div class="track-card bg-white dark:bg-gray-800 rounded-xl p-6 shadow-md transition-all duration-300 ease-in-out cursor-pointer hover:shadow-lg hover:ring-4 hover:ring-green-200 dark:hover:ring-green-500">
-            <div class="flex items-center mb-4">
-                <div class="w-12 h-12 rounded-full bg-green-100 dark:bg-green-900 flex items-center justify-center mr-4">
-                    <i class="fas fa-robot text-green-500 dark:text-green-400 text-xl"></i>
-                </div>
-                <h3 class="hover-underline-ia hover-underline text-xl font-semibold dark:text-white">Inteligencia Artificial</h3>
-            </div>
-            <p class="text-gray-600 dark:text-gray-300 mb-4">Manejo de modelos de IA con Python, Tensorflow, Scikit Learn, R, Opencv, Pytorch, Seaborn, Google Colab, Anaconda, Mysql.</p>
-            <div class="flex justify-between items-center">
-                <a aria-label="Ir al repositorio de GitHub" title="Ir al repositorio de GitHub" href="https://github.com/AlejandroDavidArzolaSaavedra?tab=repositories&q=&type=&language=jupyter+notebook&sort=stargazers" target="_blank" class="text-green-500 hover:text-green-700 dark:text-green-400 dark:hover:text-green-300 text-sm font-medium">Repositorio Github</a>
-            </div>
-        </div>
+				<div class="track-card bg-white dark:bg-gray-800 rounded-xl p-6 shadow-md transition-all duration-300 ease-in-out cursor-pointer hover:shadow-lg hover:ring-4 hover:ring-green-200 dark:hover:ring-green-500">
+					<div class="flex items-center mb-4">
+						<div class="w-12 h-12 rounded-full bg-green-100 dark:bg-green-900 flex items-center justify-center mr-4">
+							<i class="fas fa-robot text-green-500 dark:text-green-400 text-xl"></i>
+						</div>
+						<h3 class="hover-underline-ia hover-underline text-xl font-semibold dark:text-white">Inteligencia Artificial</h3>
+					</div>
+					<p class="text-gray-600 dark:text-gray-300 mb-4">Manejo de modelos de IA con Python, Tensorflow, Scikit Learn, R, Opencv, Pytorch, Seaborn, Google Colab, Anaconda, Mysql.</p>
+					<div class="flex justify-between items-center">
+						<a aria-label="Ir al repositorio de GitHub" title="Ir al repositorio de GitHub" href="https://github.com/AlejandroDavidArzolaSaavedra?tab=repositories&q=&type=&language=jupyter+notebook&sort=stargazers" target="_blank" class="text-green-500 hover:text-green-700 dark:text-green-400 dark:hover:text-green-300 text-sm font-medium">Repositorio Github</a>
+					</div>
+				</div>
 
-        <!-- Mobile Track -->
-        <div class="track-card bg-white dark:bg-gray-800 rounded-xl p-6 shadow-md transition-all duration-300 ease-in-out cursor-pointer hover:shadow-lg hover:ring-4 hover:ring-purple-200 dark:hover:ring-purple-500">
-            <div class="flex items-center mb-4">
-                <div class="w-12 h-12 rounded-full bg-purple-100 dark:bg-purple-900 flex items-center justify-center mr-4">
-                    <i class="fas fa-mobile text-purple-500 dark:text-purple-400 text-xl"></i>
-                </div>
-                <h3 class="hover-underline-movil hover-underline text-xl font-semibold dark:text-white">Desarrollo Móvil</h3>
-            </div>
-            <p class="text-gray-600 dark:text-gray-300 mb-4">Desde desarrollo nativo con Kotlin Android hasta desarrollo hibrido con React Native para ambas plataformas IOS y Android.</p>
-            <div class="flex justify-between items-center flex-wrap gap-2">
-                <a aria-label="Ir al repositorio de GitHub" title="Ir al repositorio de GitHub" href="https://github.com/AlejandroDavidArzolaSaavedra?tab=repositories&q=&type=&language=kotlin&sort=stargazers" target="_blank" class="text-purple-500 hover:text-purple-700 dark:text-purple-400 dark:hover:text-purple-300 text-sm font-medium">Repositorio Github</a>
-            </div>
-        </div>
-        
-    </div>
-</div>
+				<div class="track-card bg-white dark:bg-gray-800 rounded-xl p-6 shadow-md transition-all duration-300 ease-in-out cursor-pointer hover:shadow-lg hover:ring-4 hover:ring-purple-200 dark:hover:ring-purple-500">
+					<div class="flex items-center mb-4">
+						<div class="w-12 h-12 rounded-full bg-purple-100 dark:bg-purple-900 flex items-center justify-center mr-4">
+							<i class="fas fa-mobile text-purple-500 dark:text-purple-400 text-xl"></i>
+						</div>
+						<h3 class="hover-underline-movil hover-underline text-xl font-semibold dark:text-white">Desarrollo Móvil</h3>
+					</div>
+					<p class="text-gray-600 dark:text-gray-300 mb-4">Desde desarrollo nativo con Kotlin Android hasta desarrollo hibrido con React Native para ambas plataformas IOS y Android.</p>
+					<div class="flex justify-between items-center flex-wrap gap-2">
+						<a aria-label="Ir al repositorio de GitHub" title="Ir al repositorio de GitHub" href="https://github.com/AlejandroDavidArzolaSaavedra?tab=repositories&q=&type=&language=kotlin&sort=stargazers" target="_blank" class="text-purple-500 hover:text-purple-700 dark:text-purple-400 dark:hover:text-purple-300 text-sm font-medium">Repositorio Github</a>
+					</div>
+				</div>
 
+			</div>
+		</div>
 
-        <!-- Curriculum Sections -->
- <!-- Experiencia -->
-<div class="mb-12">
-    <h2 class="text-2xl font-bold mb-6 dark:text-white">Experiencia</h2>
-  
-    <!-- Acordeón Principal -->
-    <div class="mb-8">
-      <!-- Encabezado -->
-      <div
-        class="accordion-header flex items-center justify-between bg-white dark:bg-gray-800 p-4 rounded-lg shadow-sm cursor-pointer transition-colors duration-200"
-        onclick="toggleAccordion('beginner')"
-      >
-        <div class="flex items-center">
-          <div class="w-10 h-10 rounded-full bg-yellow-100 dark:bg-yellow-900 flex items-center justify-center mr-4">
-            <span class="text-yellow-500 dark:text-yellow-400 font-bold">1</span>
-          </div>
-          <div class="flex flex-col">
-            <h3 class="text-xl font-semibold dark:text-white"> Prácticas en Desarrollo Web y Móvil</h3>
-            <div class="block">
-                <p class="text-sm text-gray-500 dark:text-gray-400">8 meses (Septiembre 2024 - Abril 2025)</p>
-                <p class="text-sm text-gray-500 dark:text-gray-400">Desarrollo de aplicaciones web y móviles.</p>
-            </div>
-        </div>
+		<div class="mb-12">
+			<h2 class="text-2xl font-bold mb-6 dark:text-white">Experiencia</h2>
 
-        </div>
-        <i class="fas fa-chevron-down transition-transform dark:text-gray-300" id="beginner-arrow"></i>
-      </div>
-  
-      <!-- Contenido del Acordeón -->
-      <div
-        id="beginner-content"
-        class="accordion-content bg-gray-50 dark:bg-gray-700 rounded-b-lg overflow-hidden max-h-0 opacity-0 transition-all duration-500 ease-in-out"
-      >
-        <div class="p-6 space-y-6">
-          <!-- Tarjetas de Experiencia -->
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            <!-- Frontend -->
-            <div class="course-card bg-white dark:bg-gray-800 p-4 rounded-lg shadow">
-              <div class="flex items-center mb-3">
-                <div class="w-8 h-8 rounded-full bg-gray-100 dark:bg-gray-900 flex items-center justify-center mr-3">
-                  <i class="fab fa-js text-yellow-500 dark:text-yellow-400 text-lg"></i>
-                </div>
-                <h4 class="font-medium dark:text-white">Frontend</h4>
-              </div>
-              <p class="text-sm text-gray-600 dark:text-gray-300 mb-3">
-                Tecnologías para el diseño web: HTML, CSS, JavaScript, jQuery, Bootstrap y Tailwind CSS.
-              </p>
-              <div class="flex flex-wrap gap-x-4 gap-y-4">
-                <i aria-label="HTML" title="HTML" class="fab fa-html5 text-orange-500 text-3xl sm:text-4xl"></i>
-                <i aria-label="CSS" title="CSS" class="fab fa-css3-alt text-blue-500 text-3xl sm:text-4xl"></i>
-                <i aria-label="JavaScript" title="JavaScript" class="fab fa-js text-yellow-500 text-3xl sm:text-4xl"></i>
-                <img aria-label="jQuery" title="jQuery" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBnPuBl2HymDc4GpsCqk5KjyhR9zk991BGxA&s" alt="jQuery" class="w-8 h-8 sm:w-8 sm:h-8">
-                <i aria-label="Bootstrap" title="Bootstrap" class="fab fa-bootstrap text-purple-500 text-3xl sm:text-4xl"></i>
-                <img aria-label="Tailwind" title="Tailwind" src="https://static-00.iconduck.com/assets.00/tailwind-css-icon-2048x1229-u8dzt4uh.png" alt="Tailwind CSS" class="w-10 h-8 sm:w-11 sm:h-8">
-              </div>              
-            </div>
-  
-            <!-- Backend -->
-            <div class="course-card bg-white dark:bg-gray-800 p-4 rounded-lg shadow">
-              <div class="flex items-center mb-3">
-                <div class="w-8 h-8 rounded-full bg-red-100 dark:bg-red-900 flex items-center justify-center mr-3">
-                  <i class="fas fa-database text-red-500 dark:text-red-400 text-sm"></i>
-                </div>
-                <h4 class="font-medium dark:text-white">Backend</h4>
-              </div>
-              <p class="text-sm text-gray-600 dark:text-gray-300 mb-3">
-                Tecnologías: ASP y PostgreSQL para gestión de bases de datos y desarrollo de APIs.
-              </p>
-              <div class="flex flex-wrap gap-x-4 gap-y-4">
-                <img aria-label="Asp" title="Asp" src="https://ilich8086.gallerycdn.vsassets.io/extensions/ilich8086/classic-asp/0.0.4/1528274679546/Microsoft.VisualStudio.Services.Icons.Default" alt="ASP" class="w-9 h-9 sm:w-10 sm:h-10">
-                <img aria-label="PostgreSQL" title="PostgreSQL" src="https://cdn.iconscout.com/icon/free/png-256/free-postgresql-logo-icon-download-in-svg-png-gif-file-formats--programming-langugae-freebies-pack-logos-icons-1175119.png?f=webp" alt="PostgreSQL" class="w-9 h-9 sm:w-10 sm:h-10">
-              </div>              
-            </div>
-  
-            <!-- Móvil -->
-            <div class="course-card bg-white dark:bg-gray-800 p-4 rounded-lg shadow">
-              <div class="flex items-center mb-3">
-                <div class="w-8 h-8 rounded-full bg-green-100 dark:bg-green-900 flex items-center justify-center mr-3">
-                  <i class="fab fa-android text-green-500 dark:text-green text-lg"></i>
-                </div>
-                <h4 class="font-medium dark:text-white">Aplicaciones Móviles</h4>
-              </div>
-              <p class="text-sm text-gray-600 dark:text-gray-300 mb-3">
-                Desarrollo con React Native, usando Redux y RxJS para mejorar la reactividad y publicandolas en la Play Store y la App Store.
-              </p>
-              <div class="flex flex-wrap gap-x-4 gap-y-4">
-                <i  aria-label="React" title="React"  class="fab fa-react text-blue-500 text-3xl sm:text-4xl"></i>
-                <img aria-label="Redux" title="Redux" src="https://raw.githubusercontent.com/reduxjs/redux/master/logo/logo.png" alt="Redux" class="w-8 h-8 sm:w-10 sm:h-10">
-                <img aria-label="Rxjs" title="Rxjs" src="https://cdn.worldvectorlogo.com/logos/rxjs-1.svg" alt="Rxjs" class="w-8 h-8 sm:w-10 sm:h-10">
-                <img aria-label="Play Store" title="Play Store" src="https://img.icons8.com/fluent/512/google-play-store-new.png" alt="Play Store" class="w-8 h-8 sm:w-10 sm:h-10">
-                <img aria-label="App Store" title="App Store" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/App_Store_%28iOS%29.svg/1200px-App_Store_%28iOS%29.svg.png" alt="App Store" class="w-8 h-8 sm:w-10 sm:h-10">
-              </div>              
-            </div>
-          </div>  
-      </div>
-    </div>
-  </div>
-  
-            
-<!-- Intermediate Section -->
-<div class="mb-8">
-    <div class="accordion-header flex items-center justify-between bg-white dark:bg-gray-800 p-4 rounded-lg shadow-sm cursor-pointer transition-colors duration-200" onclick="toggleAccordion('intermediate')">
-      <div class="flex items-center">
-        <div class="w-10 h-10 rounded-full bg-orange-100 dark:bg-orange-900 flex items-center justify-center mr-4">
-          <span class="text-orange-500 dark:text-orange-400 font-bold">2</span>
-        </div>
-        <div class="flex flex-col">
-            <h3 class="text-xl font-semibold dark:text-white">Profesor de Programación Independiente</h3>
-            <div class="block">
-                <p class="text-sm text-gray-500 dark:text-gray-400">5 meses (Junio 2023 - Octubre 2023)</p>
-                <p class="text-sm text-gray-500 dark:text-gray-400">Impartiendo clases presenciales y online sobre las bases de la programación web con Angular y Javascript</p>
-            </div>
-        </div>
+			<div class="mb-8">
+				<div class="accordion-header flex items-center justify-between bg-white dark:bg-gray-800 p-4 rounded-lg shadow-sm cursor-pointer transition-colors duration-200" onclick="toggleAccordion('beginner')">
+					<div class="flex items-center">
+						<div class="w-10 h-10 rounded-full bg-yellow-100 dark:bg-yellow-900 flex items-center justify-center mr-4">
+							<span class="text-yellow-500 dark:text-yellow-400 font-bold">1</span>
+						</div>
+						<div class="flex flex-col">
+							<h3 class="text-xl font-semibold dark:text-white"> Prácticas en Desarrollo Web y Móvil</h3>
+							<div class="block">
+								<p class="text-sm text-gray-500 dark:text-gray-400">8 meses (Septiembre 2024 - Abril 2025)</p>
+								<p class="text-sm text-gray-500 dark:text-gray-400">Desarrollo de aplicaciones web y móviles.</p>
+							</div>
+						</div>
 
-      </div>
-      <i class="fas fa-chevron-down transition-transform dark:text-gray-300" id="intermediate-arrow"></i>
-    </div>
-    <div id="intermediate-content" class="accordion-content bg-gray-50 dark:bg-gray-700 rounded-b-lg overflow-hidden max-h-0 opacity-0 transition-all duration-500 ease-in-out">
-      <div class="p-6">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          <div class="course-card bg-white dark:bg-gray-800 p-4 rounded-lg">
-            <div class="flex items-center mb-3">
-              <div class="w-8 h-8 rounded-full bg-gray-100 dark:bg-gray-900 flex items-center justify-center mr-3">
-                <i class="fab fa-angular text-red-500 dark:text-red-400 text-lg"></i>
-              </div>
-              <h4 class="font-medium dark:text-white">Frontend</h4>
-            </div>
-            <p class="text-sm text-gray-600 dark:text-gray-300 mb-3">HTML, CSS, JavaScript, TypeScript, Rxjs y Angular para el diseño web.</p>
-            <div class="flex flex-wrap gap-x-4 gap-y-4">
-              <i class="fab fa-html5 text-orange-500 text-3xl sm:text-4xl"></i>
-              <i class="fab fa-css3-alt text-blue-500 text-3xl sm:text-4xl"></i>
-              <i class="fab fa-js text-yellow-500 text-3xl sm:text-4xl"></i>
-              <img src="https://img.icons8.com/fluent/512/typescript.png" alt="TypeScript" class="w-10 h-10 sm:w-10 sm:h-10">
-              <img src="https://cdn.worldvectorlogo.com/logos/rxjs-1.svg" alt="RxJS" class="w-8 h-10 sm:w-10 sm:h-10">
-              <i class="fab fa-angular text-red-500 text-3xl sm:text-4xl"></i>
-            </div>            
-        </div>
-  
-          <div class="course-card bg-white dark:bg-gray-800 p-4 rounded-lg">
-            <div class="flex items-center mb-3">
-              <div class="w-8 h-8 rounded-full bg-red-100 dark:bg-red-900 flex items-center justify-center mr-3">
-                <i class="fas fa-database text-red-500 dark:text-red-400 text-sm"></i>
-              </div>
-              <h4 class="font-medium dark:text-white">Backend</h4>
-            </div>
-            <p class="text-sm text-gray-600 dark:text-gray-300 mb-3">Bases de datos relacionales y no relacionales con MySQL y Firebase.</p>
-            <div class="flex flex-wrap gap-x-4 gap-y-4">
-              <img src="https://cdn-icons-png.flaticon.com/512/919/919836.png" alt="MySQL" class="w-10 h-10 sm:w-10 sm:h-10">
-              <img src="https://img.icons8.com/?size=512&id=62452&format=png" alt="Firebase" class="w-10 h-10 sm:w-10 sm:h-10">
-            </div>            
-          </div>
-  
-          <div class="course-card bg-white dark:bg-gray-800 p-4 rounded-lg">
-            <div class="flex items-center mb-3">
-              <div class="w-8 h-8 rounded-full bg-green-100 dark:bg-green-900 flex items-center justify-center mr-3">
-                <i class="fab fa-android text-green-500 dark:text-green-400 text-sm"></i>
-              </div>
-              <h4 class="font-medium dark:text-white">Desarrollo móvil</h4>
-            </div>
-            <p class="text-sm text-gray-600 dark:text-gray-300 mb-3">Aplicaciones móviles híbridas con Ionic y Capacitor para ambas plataformas.</p>
-            <div class="flex flex-wrap items-center gap-x-4 gap-y-4">
-              <img src="https://static-00.iconduck.com/assets.00/ionic-icon-2048x2048-lmy3f68o.png" alt="Ionic" class="w-10 h-10 sm:w-10 sm:h-10">
-              <img src="https://user-images.githubusercontent.com/236501/105104854-e5e42e80-5a67-11eb-8cb8-46fccb079062.png" alt="Capacitor" class="h-6 sm:h-7 w-auto">
-            </div>            
-        </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <!-- Advanced Section -->
-  <div class="mb-8">
-    <div class="accordion-header flex items-center justify-between bg-white dark:bg-gray-800 p-4 rounded-lg shadow-sm cursor-pointer transition-colors duration-200" onclick="toggleAccordion('advanced')">
-      <div class="flex items-center">
-        <div class="w-10 h-10 rounded-full bg-red-100 dark:bg-red-900 flex items-center justify-center mr-4">
-          <span class="text-red-500 dark:text-red-400 font-bold">3</span>
-        </div>
-        <div class="flex flex-col">
-            <h3 class="text-xl font-semibold dark:text-white">Prácticas de Auxiliar Administrativo</h3>
-            <div class="block">
-                <p class="text-sm text-gray-500 dark:text-gray-400">4 meses (Marzo 2018 - Junio 2018)</p>
-                <p class="text-sm text-gray-500 dark:text-gray-400">Gestión de tareas administrativas e inventario, colaboración entre departamentos y gestión de tareas contables.</p>
-            </div>
-        </div>
-      </div>
-      <i class="fas fa-chevron-down transition-transform dark:text-gray-300" id="advanced-arrow"></i>
-    </div>
-    <div id="advanced-content" class="accordion-content bg-gray-50 dark:bg-gray-700 rounded-b-lg overflow-hidden max-h-0 opacity-0 transition-all duration-500 ease-in-out">
-      <div class="p-6">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          <div class="course-card bg-white dark:bg-gray-800 p-4 rounded-lg">
-            <div class="flex items-center mb-3">
-              <div class="w-8 h-8 rounded-full bg-indigo-100 dark:bg-indigo-900 flex items-center justify-center mr-3">
-                <i class="fas fa-file-invoice-dollar text-indigo-500 dark:text-indigo-400 text-sm"></i>
-              </div>
-              <h4 class="font-medium dark:text-white">Programas Contables</h4>
-            </div>
-            <p class="text-sm text-gray-600 dark:text-gray-300 mb-3">Gestión de asientos contables utilizando software interno de la empresa.</p>
-          </div>
-  
-          <div class="course-card bg-white dark:bg-gray-800 p-4 rounded-lg">
-            <div class="flex items-center mb-3">
-              <div class="w-8 h-8 rounded-full bg-green-100 dark:bg-green-900 flex items-center justify-center mr-3">
-                <i class="fas fa-boxes text-green-500 dark:text-green-400 text-sm"></i>
-              </div>
-              <h4 class="font-medium dark:text-white">Gestión de Inventario</h4>
-            </div>
-            <p class="text-sm text-gray-600 dark:text-gray-300 mb-3">Documentación y digitalización de inventario utilizando Microsoft Word y Excel.</p>
-            <div class="flex flex-wrap gap-x-4 gap-y-4">
-              <img src="https://img.icons8.com/?size=512&id=117563&format=png" alt="Word" class="w-10 h-10 sm:w-10 sm:h-10">
-              <img src="https://img.icons8.com/?size=512&id=117561&format=png" alt="Excel" class="w-10 h-10 sm:w-10 sm:h-10">
-            </div>            
-        </div>
-  
-          <div class="course-card bg-white dark:bg-gray-800 p-4 rounded-lg">
-            <div class="flex items-center mb-3">
-              <div class="w-8 h-8 rounded-full bg-purple-100 dark:bg-purple-900 flex items-center justify-center mr-3">
-                <i class="fas fa-network-wired text-purple-500 dark:text-purple-400 text-sm"></i>
-              </div>
-              <h4 class="font-medium dark:text-white">Coordinación Interdepartamental</h4>
-            </div>
-            <p class="text-sm text-gray-600 dark:text-gray-300 mb-3">Comunicación y colaboración con distintos departamentos para procesos administrativos.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="mb-12">
-    <h2 class="text-2xl font-bold mb-6 dark:text-white">Formación</h2>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <!-- Ingeniería Informática -->
-        <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 transition-colors duration-200">
-            <div class="flex items-center mb-4">
-                <div class="w-12 h-12 rounded-full bg-blue-100 dark:bg-blue-900 flex items-center justify-center mr-4">
-                    <i aria-label="Grado de Ingeniería Informática" title="Grado de Ingeniería Informática" class="fas fa-folder-open text-blue-500 dark:text-blue-400 text-xl"></i>
-                </div>
-                <h3 class="text-xl font-semibold dark:text-white">Ingeniería Informática</h3>
-            </div>
-            <ul class="space-y-2">
-                <li class="flex items-center dark:text-gray-300">
-                    <i class="fas fa-rectangle text-blue-500 dark:text-blue-400 text-xs mr-2"></i>
-                    <span>He perfeccionado mis habilidades tecnológicas y he fomentado el hábito de afrontar constantemente nuevos desafíos.</span>
-                </li>
-                <li class="flex items-center dark:text-gray-300">
-                    <i class="fas fa-circle text-blue-500 dark:text-blue-400 text-xs mr-2"></i>
-                    <span>Matrícula de honor: Programación Móvil Nativa</span>
-                </li>
-                <li class="flex items-center dark:text-gray-300">
-                    <i class="fas fa-circle text-blue-500 dark:text-blue-400 text-xs mr-2"></i>
-                    <span>Sobresaliente: Programación Web y Móvil</span>
-                </li>
-                <li class="flex items-center dark:text-gray-300">
-                    <i class="fas fa-circle text-blue-500 dark:text-blue-400 text-xs mr-2"></i>
-                    <span>Sobresaliente: Sistemas de Información</span>
-                </li>
-            </ul>
-        </div>
+					</div>
+					<i class="fas fa-chevron-down transition-transform dark:text-gray-300" id="beginner-arrow"></i>
+				</div>
 
-        <!-- Administración y Finanzas -->
-        <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 transition-colors duration-200">
-            <div class="flex items-center mb-4">
-                <div class="w-12 h-12 rounded-full bg-green-100 dark:bg-green-900 flex items-center justify-center mr-4">
-                    <i aria-label="Ciclo Formativo de Grado Superior de Administración y Finanzas" title="Ciclo Formativo de Grado Superior de Administración y Finanzas" class="fas fa-folder-open text-green-500 dark:text-green-400 text-xl"></i>
-                </div>
-                <h3 class="text-xl font-semibold dark:text-white">CFGS Administración y Finanzas</h3>
-            </div>
-            <ul class="space-y-2">
-                <li class="flex items-center dark:text-gray-300">
-                    <span>Me ayudó a afinar mis conocimientos tanto administrativos como tecnológicos.</span>
-                </li>
-                <li class="flex items-center dark:text-gray-300">
-                    <i class="fas fa-circle text-green-500 dark:text-green-400 text-xs mr-2"></i>
-                    <span>Sobresaliente: Ofimática y Proceso de la Información</span>
-                </li>
-                <li class="flex items-center dark:text-gray-300">
-                    <i class="fas fa-circle text-green-500 dark:text-green-400 text-xs mr-2"></i>
-                    <span>Sobresaliente: Recursos Humanos</span>
-                </li>
-                <li class="flex items-center dark:text-gray-300">
-                    <i class="fas fa-circle text-green-500 dark:text-green-400 text-xs mr-2"></i>
-                    <span>Sobresaliente: Proyecto de Administración y Finanzas</span>
-                </li>
-            </ul>
-        </div>
+				<div id="beginner-content" class="accordion-content bg-gray-50 dark:bg-gray-700 rounded-b-lg overflow-hidden max-h-0 opacity-0 transition-all duration-500 ease-in-out">
+					<div class="p-6 space-y-6">
+						<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+							<div class="course-card bg-white dark:bg-gray-800 p-4 rounded-lg shadow">
+								<div class="flex items-center mb-3">
+									<div class="w-8 h-8 rounded-full bg-gray-100 dark:bg-gray-900 flex items-center justify-center mr-3">
+										<i class="fab fa-js text-yellow-500 dark:text-yellow-400 text-lg"></i>
+									</div>
+									<h4 class="font-medium dark:text-white">Frontend</h4>
+								</div>
+								<p class="text-sm text-gray-600 dark:text-gray-300 mb-3">
+									Tecnologías para el diseño web: HTML, CSS, JavaScript, jQuery, Bootstrap y Tailwind CSS.
+								</p>
+								<div class="flex flex-wrap gap-x-4 gap-y-4">
+									<i aria-label="HTML" title="HTML" class="fab fa-html5 text-orange-500 text-3xl sm:text-4xl"></i>
+									<i aria-label="CSS" title="CSS" class="fab fa-css3-alt text-blue-500 text-3xl sm:text-4xl"></i>
+									<i aria-label="JavaScript" title="JavaScript" class="fab fa-js text-yellow-500 text-3xl sm:text-4xl"></i>
+									<img aria-label="jQuery" title="jQuery" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBnPuBl2HymDc4GpsCqk5KjyhR9zk991BGxA&s" alt="jQuery" class="w-8 h-8 sm:w-8 sm:h-8">
+									<i aria-label="Bootstrap" title="Bootstrap" class="fab fa-bootstrap text-purple-500 text-3xl sm:text-4xl"></i>
+									<img aria-label="Tailwind" title="Tailwind" src="https://static-00.iconduck.com/assets.00/tailwind-css-icon-2048x1229-u8dzt4uh.png" alt="Tailwind CSS" class="w-10 h-8 sm:w-11 sm:h-8">
+								</div>
+							</div>
 
-        <!-- Escuela Oficial de Idiomas -->
-        <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 transition-colors duration-200">
-            <div class="flex items-center mb-4">
-                <div class="w-12 h-12 rounded-full bg-purple-100 dark:bg-purple-900 flex items-center justify-center mr-4">
-                    <i aria-label="Inglés en la Escuela de Idiomas" title="Inglés en la Escuela de Idiomas" class="fas fa-folder-open text-purple-500 dark:text-purple-400 text-xl"></i>
-                </div>
-                <h3 class="text-xl font-semibold dark:text-white">EOI Inglés</h3>
-            </div>
-            <ul class="space-y-2">
-                <li class="flex items-center dark:text-gray-300">
-                    <span>Mejoré mis habilidades comunicativas y de comprensión en inglés, tanto oral como escrita.</span>
-                </li>
-                <li class="flex items-center dark:text-gray-300">
-                    <i class="fas fa-circle text-purple-500 dark:text-purple-400 text-xs mr-2"></i>
-                    <span>Niveles alcanzados: A1 - B1 (Nivel Intermedio)</span>
-                </li>
-                <li class="flex items-center dark:text-gray-300">
-                    <i class="fas fa-circle text-purple-500 dark:text-purple-400 text-xs mr-2"></i>
-                    <span>Teatro en Inglés B1 – Enfocado en la expresión oral en público</span>
-                </li>
-            </ul>
-        </div>
-    </div>
-</div>
+							<div class="course-card bg-white dark:bg-gray-800 p-4 rounded-lg shadow">
+								<div class="flex items-center mb-3">
+									<div class="w-8 h-8 rounded-full bg-red-100 dark:bg-red-900 flex items-center justify-center mr-3">
+										<i class="fas fa-database text-red-500 dark:text-red-400 text-sm"></i>
+									</div>
+									<h4 class="font-medium dark:text-white">Backend</h4>
+								</div>
+								<p class="text-sm text-gray-600 dark:text-gray-300 mb-3">
+									Tecnologías: ASP y PostgreSQL para gestión de bases de datos y desarrollo de APIs.
+								</p>
+								<div class="flex flex-wrap gap-x-4 gap-y-4">
+									<img aria-label="Asp" title="Asp" src="https://ilich8086.gallerycdn.vsassets.io/extensions/ilich8086/classic-asp/0.0.4/1528274679546/Microsoft.VisualStudio.Services.Icons.Default" alt="ASP" class="w-9 h-9 sm:w-10 sm:h-10">
+									<img aria-label="PostgreSQL" title="PostgreSQL" src="https://cdn.iconscout.com/icon/free/png-256/free-postgresql-logo-icon-download-in-svg-png-gif-file-formats--programming-langugae-freebies-pack-logos-icons-1175119.png?f=webp" alt="PostgreSQL" class="w-9 h-9 sm:w-10 sm:h-10">
+								</div>
+							</div>
+
+							<div class="course-card bg-white dark:bg-gray-800 p-4 rounded-lg shadow">
+								<div class="flex items-center mb-3">
+									<div class="w-8 h-8 rounded-full bg-green-100 dark:bg-green-900 flex items-center justify-center mr-3">
+										<i class="fab fa-android text-green-500 dark:text-green text-lg"></i>
+									</div>
+									<h4 class="font-medium dark:text-white">Aplicaciones Móviles</h4>
+								</div>
+								<p class="text-sm text-gray-600 dark:text-gray-300 mb-3">
+									Desarrollo con React Native, usando Redux y RxJS para mejorar la reactividad y publicandolas en la Play Store y la App Store.
+								</p>
+								<div class="flex flex-wrap gap-x-4 gap-y-4">
+									<i aria-label="React" title="React" class="fab fa-react text-blue-500 text-3xl sm:text-4xl"></i>
+									<img aria-label="Redux" title="Redux" src="https://raw.githubusercontent.com/reduxjs/redux/master/logo/logo.png" alt="Redux" class="w-8 h-8 sm:w-10 sm:h-10">
+									<img aria-label="Rxjs" title="Rxjs" src="https://cdn.worldvectorlogo.com/logos/rxjs-1.svg" alt="Rxjs" class="w-8 h-8 sm:w-10 sm:h-10">
+									<img aria-label="Play Store" title="Play Store" src="https://img.icons8.com/fluent/512/google-play-store-new.png" alt="Play Store" class="w-8 h-8 sm:w-10 sm:h-10">
+									<img aria-label="App Store" title="App Store" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/App_Store_%28iOS%29.svg/1200px-App_Store_%28iOS%29.svg.png" alt="App Store" class="w-8 h-8 sm:w-10 sm:h-10">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="mb-8">
+				<div class="accordion-header flex items-center justify-between bg-white dark:bg-gray-800 p-4 rounded-lg shadow-sm cursor-pointer transition-colors duration-200" onclick="toggleAccordion('intermediate')">
+					<div class="flex items-center">
+						<div class="w-10 h-10 rounded-full bg-orange-100 dark:bg-orange-900 flex items-center justify-center mr-4">
+							<span class="text-orange-500 dark:text-orange-400 font-bold">2</span>
+						</div>
+						<div class="flex flex-col">
+							<h3 class="text-xl font-semibold dark:text-white">Profesor de Programación Independiente</h3>
+							<div class="block">
+								<p class="text-sm text-gray-500 dark:text-gray-400">5 meses (Junio 2023 - Octubre 2023)</p>
+								<p class="text-sm text-gray-500 dark:text-gray-400">Impartiendo clases presenciales y online sobre las bases de la programación web con Angular y Javascript</p>
+							</div>
+						</div>
+
+					</div>
+					<i class="fas fa-chevron-down transition-transform dark:text-gray-300" id="intermediate-arrow"></i>
+				</div>
+				<div id="intermediate-content" class="accordion-content bg-gray-50 dark:bg-gray-700 rounded-b-lg overflow-hidden max-h-0 opacity-0 transition-all duration-500 ease-in-out">
+					<div class="p-6">
+						<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+							<div class="course-card bg-white dark:bg-gray-800 p-4 rounded-lg">
+								<div class="flex items-center mb-3">
+									<div class="w-8 h-8 rounded-full bg-gray-100 dark:bg-gray-900 flex items-center justify-center mr-3">
+										<i class="fab fa-angular text-red-500 dark:text-red-400 text-lg"></i>
+									</div>
+									<h4 class="font-medium dark:text-white">Frontend</h4>
+								</div>
+								<p class="text-sm text-gray-600 dark:text-gray-300 mb-3">HTML, CSS, JavaScript, TypeScript, Rxjs y Angular para el diseño web.</p>
+								<div class="flex flex-wrap gap-x-4 gap-y-4">
+									<i class="fab fa-html5 text-orange-500 text-3xl sm:text-4xl"></i>
+									<i class="fab fa-css3-alt text-blue-500 text-3xl sm:text-4xl"></i>
+									<i class="fab fa-js text-yellow-500 text-3xl sm:text-4xl"></i>
+									<img src="https://img.icons8.com/fluent/512/typescript.png" alt="TypeScript" class="w-10 h-10 sm:w-10 sm:h-10">
+									<img src="https://cdn.worldvectorlogo.com/logos/rxjs-1.svg" alt="RxJS" class="w-8 h-10 sm:w-10 sm:h-10">
+									<i class="fab fa-angular text-red-500 text-3xl sm:text-4xl"></i>
+								</div>
+							</div>
+
+							<div class="course-card bg-white dark:bg-gray-800 p-4 rounded-lg">
+								<div class="flex items-center mb-3">
+									<div class="w-8 h-8 rounded-full bg-red-100 dark:bg-red-900 flex items-center justify-center mr-3">
+										<i class="fas fa-database text-red-500 dark:text-red-400 text-sm"></i>
+									</div>
+									<h4 class="font-medium dark:text-white">Backend</h4>
+								</div>
+								<p class="text-sm text-gray-600 dark:text-gray-300 mb-3">Bases de datos relacionales y no relacionales con MySQL y Firebase.</p>
+								<div class="flex flex-wrap gap-x-4 gap-y-4">
+									<img src="https://cdn-icons-png.flaticon.com/512/919/919836.png" alt="MySQL" class="w-10 h-10 sm:w-10 sm:h-10">
+									<img src="https://img.icons8.com/?size=512&id=62452&format=png" alt="Firebase" class="w-10 h-10 sm:w-10 sm:h-10">
+								</div>
+							</div>
+
+							<div class="course-card bg-white dark:bg-gray-800 p-4 rounded-lg">
+								<div class="flex items-center mb-3">
+									<div class="w-8 h-8 rounded-full bg-green-100 dark:bg-green-900 flex items-center justify-center mr-3">
+										<i class="fab fa-android text-green-500 dark:text-green-400 text-sm"></i>
+									</div>
+									<h4 class="font-medium dark:text-white">Desarrollo móvil</h4>
+								</div>
+								<p class="text-sm text-gray-600 dark:text-gray-300 mb-3">Aplicaciones móviles híbridas con Ionic y Capacitor para ambas plataformas.</p>
+								<div class="flex flex-wrap items-center gap-x-4 gap-y-4">
+									<img src="https://static-00.iconduck.com/assets.00/ionic-icon-2048x2048-lmy3f68o.png" alt="Ionic" class="w-10 h-10 sm:w-10 sm:h-10">
+									<img src="https://user-images.githubusercontent.com/236501/105104854-e5e42e80-5a67-11eb-8cb8-46fccb079062.png" alt="Capacitor" class="h-6 sm:h-7 w-auto">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="mb-8">
+				<div class="accordion-header flex items-center justify-between bg-white dark:bg-gray-800 p-4 rounded-lg shadow-sm cursor-pointer transition-colors duration-200" onclick="toggleAccordion('advanced')">
+					<div class="flex items-center">
+						<div class="w-10 h-10 rounded-full bg-red-100 dark:bg-red-900 flex items-center justify-center mr-4">
+							<span class="text-red-500 dark:text-red-400 font-bold">3</span>
+						</div>
+						<div class="flex flex-col">
+							<h3 class="text-xl font-semibold dark:text-white">Prácticas de Auxiliar Administrativo</h3>
+							<div class="block">
+								<p class="text-sm text-gray-500 dark:text-gray-400">4 meses (Marzo 2018 - Junio 2018)</p>
+								<p class="text-sm text-gray-500 dark:text-gray-400">Gestión de tareas administrativas e inventario, colaboración entre departamentos y gestión de tareas contables.</p>
+							</div>
+						</div>
+					</div>
+					<i class="fas fa-chevron-down transition-transform dark:text-gray-300" id="advanced-arrow"></i>
+				</div>
+				<div id="advanced-content" class="accordion-content bg-gray-50 dark:bg-gray-700 rounded-b-lg overflow-hidden max-h-0 opacity-0 transition-all duration-500 ease-in-out">
+					<div class="p-6">
+						<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+							<div class="course-card bg-white dark:bg-gray-800 p-4 rounded-lg">
+								<div class="flex items-center mb-3">
+									<div class="w-8 h-8 rounded-full bg-indigo-100 dark:bg-indigo-900 flex items-center justify-center mr-3">
+										<i class="fas fa-file-invoice-dollar text-indigo-500 dark:text-indigo-400 text-sm"></i>
+									</div>
+									<h4 class="font-medium dark:text-white">Programas Contables</h4>
+								</div>
+								<p class="text-sm text-gray-600 dark:text-gray-300 mb-3">Gestión de asientos contables utilizando software interno de la empresa.</p>
+							</div>
+
+							<div class="course-card bg-white dark:bg-gray-800 p-4 rounded-lg">
+								<div class="flex items-center mb-3">
+									<div class="w-8 h-8 rounded-full bg-green-100 dark:bg-green-900 flex items-center justify-center mr-3">
+										<i class="fas fa-boxes text-green-500 dark:text-green-400 text-sm"></i>
+									</div>
+									<h4 class="font-medium dark:text-white">Gestión de Inventario</h4>
+								</div>
+								<p class="text-sm text-gray-600 dark:text-gray-300 mb-3">Documentación y digitalización de inventario utilizando Microsoft Word y Excel.</p>
+								<div class="flex flex-wrap gap-x-4 gap-y-4">
+									<img src="https://img.icons8.com/?size=512&id=117563&format=png" alt="Word" class="w-10 h-10 sm:w-10 sm:h-10">
+									<img src="https://img.icons8.com/?size=512&id=117561&format=png" alt="Excel" class="w-10 h-10 sm:w-10 sm:h-10">
+								</div>
+							</div>
+
+							<div class="course-card bg-white dark:bg-gray-800 p-4 rounded-lg">
+								<div class="flex items-center mb-3">
+									<div class="w-8 h-8 rounded-full bg-purple-100 dark:bg-purple-900 flex items-center justify-center mr-3">
+										<i class="fas fa-network-wired text-purple-500 dark:text-purple-400 text-sm"></i>
+									</div>
+									<h4 class="font-medium dark:text-white">Coordinación Interdepartamental</h4>
+								</div>
+								<p class="text-sm text-gray-600 dark:text-gray-300 mb-3">Comunicación y colaboración con distintos departamentos para procesos administrativos.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="mb-12">
+				<h2 class="text-2xl font-bold mb-6 dark:text-white">Formación</h2>
+				<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+					<div class="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 transition-colors duration-200">
+						<div class="flex items-center mb-4">
+							<div class="w-12 h-12 rounded-full bg-blue-100 dark:bg-blue-900 flex items-center justify-center mr-4">
+								<i aria-label="Grado de Ingeniería Informática" title="Grado de Ingeniería Informática" class="fas fa-folder-open text-blue-500 dark:text-blue-400 text-xl"></i>
+							</div>
+							<h3 class="text-xl font-semibold dark:text-white">Ingeniería Informática</h3>
+						</div>
+						<ul class="space-y-2">
+							<li class="flex items-center dark:text-gray-300">
+								<i class="fas fa-rectangle text-blue-500 dark:text-blue-400 text-xs mr-2"></i>
+								<span>He perfeccionado mis habilidades tecnológicas y he fomentado el hábito de afrontar constantemente nuevos desafíos.</span>
+							</li>
+							<li class="flex items-center dark:text-gray-300">
+								<i class="fas fa-circle text-blue-500 dark:text-blue-400 text-xs mr-2"></i>
+								<span>Matrícula de honor: Programación Móvil Nativa</span>
+							</li>
+							<li class="flex items-center dark:text-gray-300">
+								<i class="fas fa-circle text-blue-500 dark:text-blue-400 text-xs mr-2"></i>
+								<span>Sobresaliente: Programación Web y Móvil</span>
+							</li>
+							<li class="flex items-center dark:text-gray-300">
+								<i class="fas fa-circle text-blue-500 dark:text-blue-400 text-xs mr-2"></i>
+								<span>Sobresaliente: Sistemas de Información</span>
+							</li>
+						</ul>
+					</div>
+
+					<div class="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 transition-colors duration-200">
+						<div class="flex items-center mb-4">
+							<div class="w-12 h-12 rounded-full bg-green-100 dark:bg-green-900 flex items-center justify-center mr-4">
+								<i aria-label="Ciclo Formativo de Grado Superior de Administración y Finanzas" title="Ciclo Formativo de Grado Superior de Administración y Finanzas" class="fas fa-folder-open text-green-500 dark:text-green-400 text-xl"></i>
+							</div>
+							<h3 class="text-xl font-semibold dark:text-white">CFGS Administración y Finanzas</h3>
+						</div>
+						<ul class="space-y-2">
+							<li class="flex items-center dark:text-gray-300">
+								<span>Me ayudó a afinar mis conocimientos tanto administrativos como tecnológicos.</span>
+							</li>
+							<li class="flex items-center dark:text-gray-300">
+								<i class="fas fa-circle text-green-500 dark:text-green-400 text-xs mr-2"></i>
+								<span>Sobresaliente: Ofimática y Proceso de la Información</span>
+							</li>
+							<li class="flex items-center dark:text-gray-300">
+								<i class="fas fa-circle text-green-500 dark:text-green-400 text-xs mr-2"></i>
+								<span>Sobresaliente: Recursos Humanos</span>
+							</li>
+							<li class="flex items-center dark:text-gray-300">
+								<i class="fas fa-circle text-green-500 dark:text-green-400 text-xs mr-2"></i>
+								<span>Sobresaliente: Proyecto de Administración y Finanzas</span>
+							</li>
+						</ul>
+					</div>
+
+					<div class="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 transition-colors duration-200">
+						<div class="flex items-center mb-4">
+							<div class="w-12 h-12 rounded-full bg-purple-100 dark:bg-purple-900 flex items-center justify-center mr-4">
+								<i aria-label="Inglés en la Escuela de Idiomas" title="Inglés en la Escuela de Idiomas" class="fas fa-folder-open text-purple-500 dark:text-purple-400 text-xl"></i>
+							</div>
+							<h3 class="text-xl font-semibold dark:text-white">EOI Inglés</h3>
+						</div>
+						<ul class="space-y-2">
+							<li class="flex items-center dark:text-gray-300">
+								<span>Mejoré mis habilidades comunicativas y de comprensión en inglés, tanto oral como escrita.</span>
+							</li>
+							<li class="flex items-center dark:text-gray-300">
+								<i class="fas fa-circle text-purple-500 dark:text-purple-400 text-xs mr-2"></i>
+								<span>Niveles alcanzados: A1 - B1 (Nivel Intermedio)</span>
+							</li>
+							<li class="flex items-center dark:text-gray-300">
+								<i class="fas fa-circle text-purple-500 dark:text-purple-400 text-xs mr-2"></i>
+								<span>Teatro en Inglés B1 – Enfocado en la expresión oral en público</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
 
 
-<div class="mb-12">
-    <h2 class="text-2xl font-bold mb-6 dark:text-white">Últimos Proyectos</h2>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-  
-              <!-- Vehicle Management -->
-      <div class="relative group rounded-xl overflow-hidden shadow-lg transition-all duration-500 ease-in-out">
-        <img src="https://github.com/AlejandroDavidArzolaSaavedra/Vehicle-Management-App/assets/90756437/3c76a07d-372c-42ec-9458-697d885dc6e9" alt="Vehículos"
-             class="w-full h-full object-cover transition-opacity duration-500 ease-in-out group-hover:opacity-20" />
-        <div class="absolute inset-0 p-6 flex flex-col justify-between opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out bg-black bg-opacity-50 text-white backdrop-blur-md">
-          <div>
-            <h3 class="text-xl font-semibold mb-4">Web de manejo de vehículos</h3>
-            <ul class="space-y-2 mb-4 text-sm">
-              <li class="flex items-start">
-                <i class="fas fa-circle text-green-400 text-xs mr-2 mt-1"></i>
-                <span>Desarrollada con Angular, RxJS, TypeScript, Firebase y Bootstrap.</span>
-              </li>
-              <li class="flex items-start">
-                <i class="fas fa-circle text-green-400 text-xs mr-2 mt-1"></i>
-                <span>Incluye integración con API de precios de gasolina en Gran Canaria.</span>
-              </li>
-            </ul>
-          </div>
-          <div class="flex" style="justify-content: space-between; margin:20px;">
-            <a href="https://alumnosulpgc-my.sharepoint.com/:v:/g/personal/alejandro_arzola101_alu_ulpgc_es/EUy2rvBCt3xHuL43LCZ3KiQBXAQ65ZDMK9vLNJwO8dIiCQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=Wkp5kH"
-               target="_blank"
-               aria-label="Ver demo"
-               title="Ver demo"
-               class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg text-sm font-semibold transition duration-300 shadow">
-              Zona Demo
-            </a>
-            <a href="https://github.com/AlejandroDavidArzolaSaavedra/Vehicle-Management-App"
-               target="_blank"
-               aria-label="Ir al repositorio de GitHub"
-               title="Ir al repositorio de GitHub"
-               class="bg-gray-800 hover:bg-gray-900 text-white px-4 py-2 rounded-lg text-sm font-semibold transition duration-300 shadow">
-              Código GitHub
-            </a>
-          </div>
-        </div>
-      </div>
+			<div class="mb-12">
+				<h2 class="text-2xl font-bold mb-6 dark:text-white">Últimos Proyectos</h2>
+				<div class="grid grid-cols-1 gap-6 md:grid-cols-3 auto-rows-auto">
 
+					<div class="relative group rounded-xl overflow-visible sm:overflow-hidden shadow-lg transition-all duration-500 ease-in-out">
+						<img src="https://github.com/AlejandroDavidArzolaSaavedra/Vehicle-Management-App/assets/90756437/3c76a07d-372c-42ec-9458-697d885dc6e9" alt="Vehículos" class="w-full object-cover max-h-48 sm:max-h-64 md:max-h-80 transition-opacity duration-500 ease-in-out group-hover:opacity-20" />
+						<div class="p-6 flex flex-col justify-between bg-black bg-opacity-50 text-white backdrop-blur-md 
+                  opacity-100 group-hover:opacity-100 sm:absolute sm:inset-0 sm:opacity-0 sm:group-hover:opacity-100 
+                  transition-opacity duration-500 ease-in-out">
+							<div>
+								<h3 class="text-xl font-semibold mb-4">Web de manejo de vehículos</h3>
+								<ul class="space-y-2 mb-4 text-sm">
+									<li class="flex items-start">
+										<i class="fas fa-circle text-green-400 text-xs mr-2 mt-1"></i>
+										<span>Desarrollada con Angular, RxJS, TypeScript, Firebase y Bootstrap.</span>
+									</li>
+									<li class="flex items-start">
+										<i class="fas fa-circle text-green-400 text-xs mr-2 mt-1"></i>
+										<span>Incluye integración con API de precios de gasolina en Gran Canaria.</span>
+									</li>
+								</ul>
+							</div>
+							<div class="flex flex-col sm:flex-row sm:justify-between gap-2 mt-4">
+								<a href="https://alumnosulpgc-my.sharepoint.com/:v:/g/personal/alejandro_arzola101_alu_ulpgc_es/EUy2rvBCt3xHuL43LCZ3KiQBXAQ65ZDMK9vLNJwO8dIiCQ?e=Wkp5kH" target="_blank" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg text-sm font-semibold transition duration-300 shadow text-center">
+            Zona Demo
+          </a>
+								<a href="https://github.com/AlejandroDavidArzolaSaavedra/Vehicle-Management-App" target="_blank" class="bg-gray-800 hover:bg-gray-900 text-white px-4 py-2 rounded-lg text-sm font-semibold transition duration-300 shadow text-center">
+            Código GitHub
+          </a>
+							</div>
+						</div>
+					</div>
 
-  
-      <!-- Reconocimiento Facial -->
-      <div class="relative group rounded-xl overflow-hidden shadow-lg transition-all duration-500 ease-in-out">
-        <img src="https://i.blogs.es/6e0973/reconocimiento-facial/840_560.jpg" alt="Reconocimiento Facial"
-             class="w-full h-full object-cover transition-opacity duration-500 ease-in-out group-hover:opacity-20" />
-        <div class="absolute inset-0 p-6 flex flex-col justify-between opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out bg-black bg-opacity-50 text-white backdrop-blur-md">
-          <div>
-            <h3 class="text-xl font-semibold mb-4">Reconocimiento Facial con IA</h3>
-            <ul class="space-y-2 mb-4 text-sm">
-              <li class="flex items-start">
-                <i class="fas fa-circle text-purple-400 text-xs mr-2 mt-1"></i>
-                <span>Proyecto de IA para mejorar la precisión del reconocimiento facial con machine learning.</span>
-              </li>
-              <li class="flex items-start">
-                <i class="fas fa-circle text-purple-400 text-xs mr-2 mt-1"></i>
-                <span>Utiliza Python, NumPy, DEAP, imutils y SciPy.</span>
-              </li>
-            </ul>
-          </div>
-          <div class="flex" style="justify-content: space-between; margin:20px;">
-            <a href="https://alumnosulpgc-my.sharepoint.com/:v:/g/personal/alejandro_arzola101_alu_ulpgc_es/EdmrxSF0e9ZMp0RtAkHCv0oBGzbIx3aV07458a__J93Pig?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=XJlu4T"
-               target="_blank"
-               aria-label="Ver demo"
-               title="Ver demo"
-               class="bg-purple-500 hover:bg-purple-600 text-white px-4 py-2 rounded-lg text-sm font-semibold transition duration-300 shadow">
-              Zona Demo
-            </a>
-            <a href="https://github.com/AlejandroDavidArzolaSaavedra/Face-Recognition-IA"
-               target="_blank"
-               aria-label="Ir al repositorio de GitHub"
-               title="Ir al repositorio de GitHub"
-               class="bg-gray-800 hover:bg-gray-900 text-white px-4 py-2 rounded-lg text-sm font-semibold transition duration-300 shadow">
-              Código GitHub
-            </a>
-          </div>
-        </div>
-      </div>
-  
+					<div class="relative group rounded-xl overflow-visible sm:overflow-hidden shadow-lg transition-all duration-500 ease-in-out">
+						<img src="https://i.blogs.es/6e0973/reconocimiento-facial/840_560.jpg" alt="Reconocimiento Facial" class="w-full h-full object-cover max-h-48 sm:max-h-64 md:max-h-80 transition-opacity duration-500 ease-in-out group-hover:opacity-20" />
+						<div class="p-6 flex flex-col justify-between bg-black bg-opacity-50 text-white backdrop-blur-md 
+                  opacity-100 group-hover:opacity-100 sm:absolute sm:inset-0 sm:opacity-0 sm:group-hover:opacity-100 
+                  transition-opacity duration-500 ease-in-out">
+							<div>
+								<h3 class="text-xl font-semibold mb-4">Reconocimiento Facial con IA</h3>
+								<ul class="space-y-2 mb-4 text-sm">
+									<li class="flex items-start">
+										<i class="fas fa-circle text-purple-400 text-xs mr-2 mt-1"></i>
+										<span>Proyecto de IA para mejorar la precisión del reconocimiento facial con machine learning.</span>
+									</li>
+									<li class="flex items-start">
+										<i class="fas fa-circle text-purple-400 text-xs mr-2 mt-1"></i>
+										<span>Utiliza Python, NumPy, DEAP, imutils y SciPy.</span>
+									</li>
+								</ul>
+							</div>
+							<div class="flex flex-col sm:flex-row sm:justify-between gap-2 mt-4">
+								<a href="https://alumnosulpgc-my.sharepoint.com/:v:/g/personal/alejandro_arzola101_alu_ulpgc_es/EdmrxSF0e9ZMp0RtAkHCv0oBGzbIx3aV07458a__J93Pig?e=XJlu4T" target="_blank" class="bg-purple-500 hover:bg-purple-600 text-white px-4 py-2 rounded-lg text-sm font-semibold transition duration-300 shadow text-center">
+            Zona Demo
+          </a>
+								<a href="https://github.com/AlejandroDavidArzolaSaavedra/Face-Recognition-IA" target="_blank" class="bg-gray-800 hover:bg-gray-900 text-white px-4 py-2 rounded-lg text-sm font-semibold transition duration-300 shadow text-center">
+            Código GitHub
+          </a>
+							</div>
+						</div>
+					</div>
 
-      <!-- Tunewave -->
-      <div class="relative group rounded-xl overflow-hidden shadow-lg transition-all duration-500 ease-in-out">
-        <img src="https://github.com/user-attachments/assets/e74b11a5-765a-4b65-b7c0-ac18f872dc44" alt="Tunewave"
-             class="w-full h-full object-cover transition-opacity duration-500 ease-in-out group-hover:opacity-20" />
-        <div class="absolute inset-0 p-6 flex flex-col justify-between opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out bg-black bg-opacity-50 text-white backdrop-blur-md">
-          <div>
-            <h3 class="text-xl font-semibold mb-4">Tunewave - App Móvil</h3>
-            <ul class="space-y-2 mb-4 text-sm">
-              <li class="flex items-start">
-                <i class="fas fa-circle text-blue-400 text-xs mr-2 mt-1"></i>
-                <span>Certificado oficial de Google Play y certificado de Google Activate.</span>
-              </li>
-              <li class="flex items-start">
-                <i class="fas fa-circle text-blue-400 text-xs mr-2 mt-1"></i>
-                <span>Desarrollada en Kotlin con Retrofit, ExoPlayer, MVVM, Firebase, Dagger Hilt y la API de Spotify.</span>
-              </li>
-            </ul>
-          </div>
-          <div class="flex" style="justify-content: space-between; margin:20px;">
-            <a href="https://alumnosulpgc-my.sharepoint.com/:v:/g/personal/alejandro_arzola101_alu_ulpgc_es/EWBzy82l9UVCmTDhEXWkvBQByy9xsp4f4ji7TX3fdTv-xA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=uMtuIe"
-               target="_blank"
-               aria-label="Ver demo"
-               title="Ver demo"
-               class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-semibold transition duration-300 shadow">
-              Zona Demo
-            </a>
-            <a href="https://github.com/AlejandroDavidArzolaSaavedra/TuneWave"
-               target="_blank"
-               aria-label="Ir al repositorio de GitHub"
-               title="Ir al repositorio de GitHub"
-               class="bg-gray-800 hover:bg-gray-900 text-white px-4 py-2 rounded-lg text-sm font-semibold transition duration-300 shadow">
-              Código GitHub
-            </a>
-          </div>
-        </div>
-      </div>
-  
+					<div class="relative group rounded-xl overflow-visible sm:overflow-hidden shadow-lg transition-all duration-500 ease-in-out">
+						<img src="https://github.com/user-attachments/assets/e74b11a5-765a-4b65-b7c0-ac18f872dc44" alt="Tunewave" class="w-full object-cover max-h-48 sm:max-h-64 md:max-h-80 transition-opacity duration-500 ease-in-out group-hover:opacity-20" />
+						<div class="p-6 flex flex-col justify-between bg-black bg-opacity-50 text-white backdrop-blur-md 
+                  opacity-100 group-hover:opacity-100 sm:absolute sm:inset-0 sm:opacity-0 sm:group-hover:opacity-100 
+                  transition-opacity duration-500 ease-in-out">
+							<div>
+								<h3 class="text-xl font-semibold mb-4">Tunewave - App Móvil</h3>
+								<ul class="space-y-2 mb-4 text-sm">
+									<li class="flex items-start">
+										<i class="fas fa-circle text-blue-400 text-xs mr-2 mt-1"></i>
+										<span>Certificado oficial de Google Play y certificado de Google Activate.</span>
+									</li>
+									<li class="flex items-start">
+										<i class="fas fa-circle text-blue-400 text-xs mr-2 mt-1"></i>
+										<span>Desarrollada en Kotlin con Retrofit, ExoPlayer, MVVM, Firebase, Dagger Hilt y la API de Spotify.</span>
+									</li>
+								</ul>
+							</div>
+							<div class="flex flex-col sm:flex-row sm:justify-between gap-2 mt-4">
+								<a href="https://alumnosulpgc-my.sharepoint.com/:v:/g/personal/alejandro_arzola101_alu_ulpgc_es/EWBzy82l9UVCmTDhEXWkvBQByy9xsp4f4ji7TX3fdTv-xA?e=uMtuIe" target="_blank" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-semibold transition duration-300 shadow text-center">
+            Zona Demo
+          </a>
+								<a href="https://github.com/AlejandroDavidArzolaSaavedra/TuneWave" target="_blank" class="bg-gray-800 hover:bg-gray-900 text-white px-4 py-2 rounded-lg text-sm font-semibold transition duration-300 shadow text-center">
+            Código GitHub
+          </a>
+							</div>
+						</div>
+					</div>
 
-
-    </div>
-  </div>
-        
+				</div>
+			</div>
 
 
 
-        <div class="mb-12">
-            <h2 class="text-2xl font-bold mb-6 dark:text-white">Cursos y Certificaciones</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">                
-                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 transition-colors duration-200">
-                    <div class="flex items-center mb-4">
-                        <div class="w-12 h-12 rounded-full bg-blue-100 dark:bg-blue-900 flex items-center justify-center mr-4">
-                            <i class="fas fa-mobile text-blue-500 dark:text-blue-400 text-xl"></i>
-                        </div>
-                        <h3 class="text-xl font-semibold dark:text-white">Curso de Desarrollo de Apps Móviles</h3>
-                    </div>
-                    <ul class="space-y-2">
-                        <li class="flex items-center dark:text-gray-300">
-                            <i class="fas fa-circle text-blue-500 dark:text-blue-400 text-xs mr-2"></i>
-                            <span>Certificación oficial de Google Play y certificado de Google Activate</span>
-                        </li>
-                        <li class="flex items-center dark:text-gray-300">
-                            <i class="fas fa-circle text-blue-500 dark:text-blue-400 text-xs mr-2"></i>
-                            <span>Experiencia con las fichas de Google Play y de la App Store</span>
-                        </li>
-                        <li class="flex items-center dark:text-gray-300">
-                            <i class="fas fa-circle text-blue-500 dark:text-blue-400 text-xs mr-2"></i>
-                            <span>Experiencia en subir aplicaciones en Google Play y en la App Store</span>
-                        </li>
-                    </ul>
-                </div>
-        
-                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 transition-colors duration-200">
-                    <div class="flex items-center mb-4">
-                        <div class="w-12 h-12 rounded-full bg-green-100 dark:bg-green-900 flex items-center justify-center mr-4">
-                            <i class="fas fa-computer text-green-500 dark:text-green-400 text-xl"></i>
-                        </div>
-                        <h3 class="text-xl font-semibold dark:text-white">Curso de Git, GitHub y Jira</h3>
-                    </div>
-                    <ul class="space-y-2">
-                        <li class="flex items-center dark:text-gray-300">
-                            <i class="fas fa-circle text-green-500 dark:text-green-400 text-xs mr-2"></i>
-                            <span>Certificado en Jira por Great Learning</span>
-                        </li>
-                        <li class="flex items-center dark:text-gray-300">
-                            <i class="fas fa-circle text-green-500 dark:text-green-400 text-xs mr-2"></i>
-                            <span>Certificado en Git y GitHub por Great Learning</span>
-                        </li>
-                    </ul>
-                </div>
-        
-                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 transition-colors duration-200">
-                    <div class="flex items-center mb-4">
-                        <div class="w-12 h-12 rounded-full bg-purple-100 dark:bg-purple-900 flex items-center justify-center mr-4">
-                            <i class="fas fa-cloud text-purple-500 dark:text-purple-400 text-xl"></i>
-                        </div>
-                        <h3 class="text-xl font-semibold dark:text-white">Curso de Cloud Computing</h3>
-                    </div>
-                    <ul class="space-y-2">
-                        <li class="flex items-center dark:text-gray-300">
-                            <i class="fas fa-circle text-purple-500 dark:text-purple-400 text-xs mr-2"></i>
-                            <span>Certificado por Google Activate</span>
-                        </li>
-                        <li class="flex items-center dark:text-gray-300">
-                            <i class="fas fa-circle text-purple-500 dark:text-purple-400 text-xs mr-2"></i>
-                            <span>Experiencia práctica con servicios en la nube utilizando AWS</span>
-                        </li>
-                    </ul>
-                </div>
-                
-            </div>
-        </div>
 
-        <footer class="text-center text-gray-600 dark:text-gray-400 text-lg py-6">
-            <p>©2025 Alejandro David Arzola Saavedra</p>
-            <div class="flex justify-center space-x-4 mt-2">
-                <a aria-label="Correo electrónico" title="Correo electrónico" href="https://github.com/AlejandroDavidArzolaSaavedra" class="hover:text-primary-600 dark:hover:text-primary-400"><i class="fa-solid fa-envelope"></i></a>
-                <a aria-label="Linkedin" title="Linkedin" href="https://www.linkedin.com/in/alejandro-david-arzola-saavedra/" class="hover:text-primary-600 dark:hover:text-primary-400"><i class="fab fa-linkedin"></i></a>
-                <a aria-label="GitHub" title="GitHub" href="https://github.com/AlejandroDavidArzolaSaavedra" class="hover:text-primary-600 dark:hover:text-primary-400"><i class="fab fa-github"></i></a>
-            </div>
-        </footer>
-    </div>
+			<div class="mb-12">
+				<h2 class="text-2xl font-bold mb-6 dark:text-white">Cursos y Certificaciones</h2>
+				<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+					<div class="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 transition-colors duration-200">
+						<div class="flex items-center mb-4">
+							<div class="w-12 h-12 rounded-full bg-blue-100 dark:bg-blue-900 flex items-center justify-center mr-4">
+								<i class="fas fa-mobile text-blue-500 dark:text-blue-400 text-xl"></i>
+							</div>
+							<h3 class="text-xl font-semibold dark:text-white">Curso de Desarrollo de Apps Móviles</h3>
+						</div>
+						<ul class="space-y-2">
+							<li class="flex items-center dark:text-gray-300">
+								<i class="fas fa-circle text-blue-500 dark:text-blue-400 text-xs mr-2"></i>
+								<span>Certificación oficial de Google Play y certificado de Google Activate</span>
+							</li>
+							<li class="flex items-center dark:text-gray-300">
+								<i class="fas fa-circle text-blue-500 dark:text-blue-400 text-xs mr-2"></i>
+								<span>Experiencia con las fichas de Google Play y de la App Store</span>
+							</li>
+							<li class="flex items-center dark:text-gray-300">
+								<i class="fas fa-circle text-blue-500 dark:text-blue-400 text-xs mr-2"></i>
+								<span>Experiencia en subir aplicaciones en Google Play y en la App Store</span>
+							</li>
+						</ul>
+					</div>
 
-    <script>
-        const themeToggle = document.getElementById('themeToggle');
-       const html = document.documentElement;
-        
-        function toggleAccordion(id) {
-            const content = document.getElementById(`${id}-content`);
-            const arrow = document.getElementById(`${id}-arrow`);
-            if (content.style.maxHeight && content.style.maxHeight !== '0px') {
-                content.style.maxHeight = '0px';
-                content.style.opacity = '0';
-                arrow.style.transform = 'rotate(0deg)';
-            } else {
-                content.style.maxHeight = content.scrollHeight + 'px';
-                content.style.opacity = '1';
-                arrow.style.transform = 'rotate(180deg)';
-            }
-        }
+					<div class="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 transition-colors duration-200">
+						<div class="flex items-center mb-4">
+							<div class="w-12 h-12 rounded-full bg-green-100 dark:bg-green-900 flex items-center justify-center mr-4">
+								<i class="fas fa-computer text-green-500 dark:text-green-400 text-xl"></i>
+							</div>
+							<h3 class="text-xl font-semibold dark:text-white">Curso de Git, GitHub y Jira</h3>
+						</div>
+						<ul class="space-y-2">
+							<li class="flex items-center dark:text-gray-300">
+								<i class="fas fa-circle text-green-500 dark:text-green-400 text-xs mr-2"></i>
+								<span>Certificado en Jira por Great Learning</span>
+							</li>
+							<li class="flex items-center dark:text-gray-300">
+								<i class="fas fa-circle text-green-500 dark:text-green-400 text-xs mr-2"></i>
+								<span>Certificado en Git y GitHub por Great Learning</span>
+							</li>
+						</ul>
+					</div>
 
-        document.addEventListener('DOMContentLoaded', () => {
-            setTimeout(() => {
-                const progressBar = document.getElementById('progressBar');
-                const progressPercent = document.getElementById('progressPercent');
-                let progress = 0;
-                
-                const interval = setInterval(() => {
-                    progress += Math.floor(Math.random() * 5) + 1;
-                    if (progress > 75) {
-                        progress = 75;
-                        clearInterval(interval);
-                    }
-                    progressBar.style.width = `${progress}%`;
-                    progressPercent.textContaent = `${progress}%`;
-                }, 100);
-            }, 500);
-        });
+					<div class="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 transition-colors duration-200">
+						<div class="flex items-center mb-4">
+							<div class="w-12 h-12 rounded-full bg-purple-100 dark:bg-purple-900 flex items-center justify-center mr-4">
+								<i class="fas fa-cloud text-purple-500 dark:text-purple-400 text-xl"></i>
+							</div>
+							<h3 class="text-xl font-semibold dark:text-white">Curso de Cloud Computing</h3>
+						</div>
+						<ul class="space-y-2">
+							<li class="flex items-center dark:text-gray-300">
+								<i class="fas fa-circle text-purple-500 dark:text-purple-400 text-xs mr-2"></i>
+								<span>Certificado por Google Activate</span>
+							</li>
+							<li class="flex items-center dark:text-gray-300">
+								<i class="fas fa-circle text-purple-500 dark:text-purple-400 text-xs mr-2"></i>
+								<span>Experiencia práctica con servicios en la nube utilizando AWS</span>
+							</li>
+						</ul>
+					</div>
 
-        document.addEventListener('DOMContentLoaded', () => {
-            const accordions = ['beginner', 'intermediate', 'advanced'];
-            accordions.forEach(acc => {
-                document.getElementById(`${acc}-content`).classList.remove('show');
-            });
-        });
-    </script>
+				</div>
+			</div>
+
+			<footer class="text-center text-gray-600 dark:text-gray-400 text-lg py-6">
+				<p>©2025 Alejandro David Arzola Saavedra</p>
+				<div class="flex justify-center space-x-4 mt-2">
+					<a aria-label="Correo electrónico" title="Correo electrónico" href="https://github.com/AlejandroDavidArzolaSaavedra" class="hover:text-primary-600 dark:hover:text-primary-400"><i class="fa-solid fa-envelope"></i></a>
+					<a aria-label="Linkedin" title="Linkedin" href="https://www.linkedin.com/in/alejandro-david-arzola-saavedra/" class="hover:text-primary-600 dark:hover:text-primary-400"><i class="fab fa-linkedin"></i></a>
+					<a aria-label="GitHub" title="GitHub" href="https://github.com/AlejandroDavidArzolaSaavedra" class="hover:text-primary-600 dark:hover:text-primary-400"><i class="fab fa-github"></i></a>
+				</div>
+			</footer>
+		</div>
+
+		<script>
+			const themeToggle = document.getElementById('themeToggle');
+			       const html = document.documentElement;
+			        
+			        function toggleAccordion(id) {
+			            const content = document.getElementById(`${id}-content`);
+			            const arrow = document.getElementById(`${id}-arrow`);
+			            if (content.style.maxHeight && content.style.maxHeight !== '0px') {
+			                content.style.maxHeight = '0px';
+			                content.style.opacity = '0';
+			                arrow.style.transform = 'rotate(0deg)';
+			            } else {
+			                content.style.maxHeight = content.scrollHeight + 'px';
+			                content.style.opacity = '1';
+			                arrow.style.transform = 'rotate(180deg)';
+			            }
+			        }
+			
+			        document.addEventListener('DOMContentLoaded', () => {
+			            const accordions = ['beginner', 'intermediate', 'advanced'];
+			            accordions.forEach(acc => {
+			                document.getElementById(`${acc}-content`).classList.remove('show');
+			            });
+			        });
+			
+		</script>
 
 
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const profileSection = document.querySelector('.user-profile');
-      const floatingIcons = document.getElementById('floating-socials');
-      if (!profileSection || !floatingIcons) return;
-      const observer = new IntersectionObserver(
-        ([entry]) => {
-          if (entry.isIntersecting) {
-            floatingIcons.classList.remove('opacity-100');
-            floatingIcons.classList.add('opacity-0', 'pointer-events-none');
-          } else {
-            floatingIcons.classList.remove('opacity-0', 'pointer-events-none');
-            floatingIcons.classList.add('opacity-100');
-          }
-        },
-        { threshold: 0.1 }
-      );
-  
-      observer.observe(profileSection);
-    });
-  </script>
-    
+		<script>
+			document.addEventListener('DOMContentLoaded', () => {
+			      const profileSection = document.querySelector('.user-profile');
+			      const floatingIcons = document.getElementById('floating-socials');
+			      if (!profileSection || !floatingIcons) return;
+			      const observer = new IntersectionObserver(
+			        ([entry]) => {
+			          if (entry.isIntersecting) {
+			            floatingIcons.classList.remove('opacity-100');
+			            floatingIcons.classList.add('opacity-0', 'pointer-events-none');
+			          } else {
+			            floatingIcons.classList.remove('opacity-0', 'pointer-events-none');
+			            floatingIcons.classList.add('opacity-100');
+			          }
+			        },
+			        { threshold: 0.1 }
+			      );
+			  
+			      observer.observe(profileSection);
+			    });
+			
+		</script>
 
-<script>
-    function updateTimeWidget() {
-        const now = new Date();
-        const hours = now.getHours();
-        const minutes = now.getMinutes().toString().padStart(2, '0');
-        const timeDisplay = `${hours}:${minutes}`;
-        document.getElementById("current-time").textContent = timeDisplay;
 
-        const widget = document.getElementById("time-widget");
-        const icon = document.getElementById("weather-icon");
-
-        if (hours >= 6 && hours < 18) {
-            localStorage.setItem('theme', 'light');
-            if (hours >= 6 && hours < 18) {
-                icon.innerHTML = "<img src='https://images.icon-icons.com/3191/PNG/512/sunny_sun_cloud_weather_cloudy_icon_194237.png' alt='Weather Icon' style='width: 100px; height: 100px;'>";
-            }
-        } else {
-            localStorage.setItem('theme', 'dark');
-            if (hours >= 18 && hours < 6) {
-                icon.innerHTML = "<img src='https://cdn-icons-png.flaticon.com/512/9116/9116660.png' alt='Weather Icon' style='width: 100px; height: 100px;'>";
-            }
-        }
-        if (localStorage.getItem('theme') === 'dark' || (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-            html.classList.add('dark');
-          } else {
-            html.classList.remove('dark');
-        }
-    }
-    updateTimeWidget();
-    setInterval(updateTimeWidget, 60000);
-</script>
+		<script>
+			document.addEventListener('DOMContentLoaded', () => {
+			    function updateTimeWidget() {
+			        const now = new Date();
+			        const hours = now.getHours();
+			        const minutes = now.getMinutes().toString().padStart(2, '0');
+			        const timeDisplay = `${hours}:${minutes}`;
+			        document.getElementById("current-time").textContent = timeDisplay;
+			
+			        const icon = document.getElementById("weather-icon");
+			        if (hours >= 6 && hours < 18) {
+			            localStorage.setItem('theme', 'light');
+			            icon.innerHTML = "<img src='https://images.icon-icons.com/3191/PNG/512/sunny_sun_cloud_weather_cloudy_icon_194237.png' alt='Sol' style='width: 100px; height: 100px;'>";
+			        } else {
+			            localStorage.setItem('theme', 'dark');
+			            icon.innerHTML = "<img src='https://cdn-icons-png.flaticon.com/512/9116/9116660.png' alt='Luna' style='width: 100px; height: 100px;'>";
+			        }
+			        const html = document.documentElement;
+			        if (localStorage.getItem('theme') === 'dark' || (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+			            html.classList.add('dark');
+			        } else {
+			            html.classList.remove('dark');
+			        }
+			    }
+			    
+			    updateTimeWidget();
+			    setInterval(updateTimeWidget, 60000);
+			});
+			
+		</script>
 </body>
 </html>
