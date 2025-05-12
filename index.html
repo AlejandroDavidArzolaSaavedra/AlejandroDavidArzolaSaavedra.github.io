@@ -43,6 +43,11 @@
 		
 	</script>
 	<style>
+        a:focus, button:focus {
+            outline: 2px solid #3b82f6;
+            outline-offset: 2px;
+        }
+
 		.hover-underline {
 		  font-size: 2rem;
 		  position: relative;
@@ -144,7 +149,8 @@
 	</style>
 </head>
 <body class="bg-gray-50 dark:bg-gray-900 font-sans transition-colors duration-200" style="padding: 20px;">
-	<div class="container mx-auto px-4 py-8">
+    <a href="#main-content" class="sr-only focus:not-sr-only">Skip to main content</a>
+	<main class="container mx-auto px-4 py-8">
 
 		<header class="flex justify-between items-center mb-12">
 			<div>
@@ -154,7 +160,8 @@
 			<i id="themeIcon"></i>
 		</header>
 
-		<div class="user-profile bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 mb-8 transition-colors duration-200">
+		<section aria-label="User profile" class="user-profile bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 mb-8 transition-colors duration-200">
+			
 
 			<div class="flex flex-col md:flex-row items-center">
 				<div class="w-36 h-36 rounded-full bg-primary-100 dark:bg-primary-900 flex items-center justify-center mb-4 md:mb-0 md:mr-6">
@@ -192,7 +199,7 @@
 					</div>
 
 				</div>
-				<section idt="time-Watch" class=" flex-1 mt-4 md:mt-0 md:ml-6 rounded-lg" style="align-items: end; justify-content: end; display: flex; flex-direction: column; gap: 10px;">
+				<section id="time-Watch" role="region" aria-label="Current time" class="flex-1 mt-4 md:mt-0 md:ml-6 rounded-lg" style="align-items: end; justify-content: end; display: flex; flex-direction: column; gap: 10px;">
 					<div id="time-widget" class="flex p-4 rounded-lg">
 						<div>
 							<div id="weather-icon" style="display: inline-block; font-size:5rem;"></div>
@@ -205,11 +212,10 @@
 					</div>
 				</section>
 			</div>
-		</div>
+		</section>
 
-		<div id="floating-socials" class="fixed bottom-4 right-4 z-50 opacity-0 pointer-events-none transition-opacity duration-700 
-            bg-white dark:bg-gray-800 p-3 rounded-full shadow-lg border border-gray-300 dark:border-gray-600">
-			<div class="flex text-xl text-gray-700 dark:text-gray-300  gap-2">
+        <nav aria-label="Social media links" id="floating-socials" class="fixed bottom-4 right-4 z-50 opacity-0 pointer-events-none transition-opacity duration-700 bg-white dark:bg-gray-800 p-3 rounded-full shadow-lg border border-gray-300 dark:border-gray-600">
+        	<div class="flex text-xl text-gray-700 dark:text-gray-300  gap-2">
 
 				<a href="https://drive.google.com/file/d/1YPWVE-tjUEziuM2uElAdDeQGZol6b2rv/view?usp=sharing" target="_blank" aria-label="Currículum Vitae" title="Currículum Vitae" class="group relative w-10 h-10 flex items-center justify-center border border-white rounded-full overflow-hidden transition-all duration-500 hover:rotate-[360deg]">
 					<span class="absolute inset-0 bg-red-600 translate-y-full group-hover:translate-y-0 transition-all duration-500 z-0"></span>
@@ -230,9 +236,8 @@
 					<span class="absolute inset-0 bg-gray-800 translate-y-full group-hover:translate-y-0 transition-all duration-500 z-0"></span>
 					<i class="fab fa-github text-lg group-hover:text-white z-10 transition-all duration-500"></i>
 				</a>
-
-			</div>
-		</div>
+		    </div>
+        </nav>
 
 		<div class="mb-12">
 			<h2 class="text-2xl font-bold mb-6 dark:text-white">Mis ramas exploradas</h2>
@@ -315,11 +320,12 @@
 									Tecnologías para el diseño web: HTML, CSS, JavaScript, jQuery, Bootstrap y Tailwind CSS.
 								</p>
 								<div class="flex flex-wrap gap-x-4 gap-y-4">
-									<i aria-label="HTML" title="HTML" class="fab fa-html5 text-orange-500 text-3xl sm:text-4xl"></i>
-									<i aria-label="CSS" title="CSS" class="fab fa-css3-alt text-blue-500 text-3xl sm:text-4xl"></i>
-									<i aria-label="JavaScript" title="JavaScript" class="fab fa-js text-yellow-500 text-3xl sm:text-4xl"></i>
+                                    <!-- For interactive icons, use buttons with proper labels -->
+                                    <i title="HTML" class="fab fa-html5 text-orange-500 text-3xl sm:text-4xl"></i>
+									<i title="CSS" class="fab fa-css3-alt text-blue-500 text-3xl sm:text-4xl"></i>
+									<i title="JavaScript" class="fab fa-js text-yellow-500 text-3xl sm:text-4xl"></i>
 									<img aria-label="jQuery" title="jQuery" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBnPuBl2HymDc4GpsCqk5KjyhR9zk991BGxA&s" alt="jQuery" class="w-8 h-8 sm:w-8 sm:h-8">
-									<i aria-label="Bootstrap" title="Bootstrap" class="fab fa-bootstrap text-purple-500 text-3xl sm:text-4xl"></i>
+									<i title="Bootstrap" class="fab fa-bootstrap text-purple-500 text-3xl sm:text-4xl"></i>
 									<img aria-label="Tailwind" title="Tailwind" src="https://static-00.iconduck.com/assets.00/tailwind-css-icon-2048x1229-u8dzt4uh.png" alt="Tailwind CSS" class="w-10 h-8 sm:w-11 sm:h-8">
 								</div>
 							</div>
@@ -351,7 +357,7 @@
 									Desarrollo con React Native, usando Redux y RxJS para mejorar la reactividad y publicandolas en la Play Store y la App Store.
 								</p>
 								<div class="flex flex-wrap gap-x-4 gap-y-4">
-									<i aria-label="React" title="React" class="fab fa-react text-blue-500 text-3xl sm:text-4xl"></i>
+									<i title="React" class="fab fa-react text-blue-500 text-3xl sm:text-4xl"></i>
 									<img aria-label="Redux" title="Redux" src="https://raw.githubusercontent.com/reduxjs/redux/master/logo/logo.png" alt="Redux" class="w-8 h-8 sm:w-10 sm:h-10">
 									<img aria-label="Rxjs" title="Rxjs" src="https://cdn.worldvectorlogo.com/logos/rxjs-1.svg" alt="Rxjs" class="w-8 h-8 sm:w-10 sm:h-10">
 									<img aria-label="Play Store" title="Play Store" src="https://img.icons8.com/fluent/512/google-play-store-new.png" alt="Play Store" class="w-8 h-8 sm:w-10 sm:h-10">
@@ -496,7 +502,7 @@
 					<div class="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 transition-colors duration-200">
 						<div class="flex items-center mb-4">
 							<div class="w-12 h-12 rounded-full bg-blue-100 dark:bg-blue-900 flex items-center justify-center mr-4">
-								<i aria-label="Grado de Ingeniería Informática" title="Grado de Ingeniería Informática" class="fas fa-folder-open text-blue-500 dark:text-blue-400 text-xl"></i>
+								<i title="Grado de Ingeniería Informática" class="fas fa-folder-open text-blue-500 dark:text-blue-400 text-xl"></i>
 							</div>
 							<h3 class="text-xl font-semibold dark:text-white">Ingeniería Informática</h3>
 						</div>
@@ -523,7 +529,7 @@
 					<div class="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 transition-colors duration-200">
 						<div class="flex items-center mb-4">
 							<div class="w-12 h-12 rounded-full bg-green-100 dark:bg-green-900 flex items-center justify-center mr-4">
-								<i aria-label="Ciclo Formativo de Grado Superior de Administración y Finanzas" title="Ciclo Formativo de Grado Superior de Administración y Finanzas" class="fas fa-folder-open text-green-500 dark:text-green-400 text-xl"></i>
+								<i title="Ciclo Formativo de Grado Superior de Administración y Finanzas" class="fas fa-folder-open text-green-500 dark:text-green-400 text-xl"></i>
 							</div>
 							<h3 class="text-xl font-semibold dark:text-white">CFGS Administración y Finanzas</h3>
 						</div>
@@ -549,7 +555,7 @@
 					<div class="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 transition-colors duration-200">
 						<div class="flex items-center mb-4">
 							<div class="w-12 h-12 rounded-full bg-purple-100 dark:bg-purple-900 flex items-center justify-center mr-4">
-								<i aria-label="Inglés en la Escuela de Idiomas" title="Inglés en la Escuela de Idiomas" class="fas fa-folder-open text-purple-500 dark:text-purple-400 text-xl"></i>
+								<i title="Inglés en la Escuela de Idiomas" class="fas fa-folder-open text-purple-500 dark:text-purple-400 text-xl"></i>
 							</div>
 							<h3 class="text-xl font-semibold dark:text-white">EOI Inglés</h3>
 						</div>
@@ -594,7 +600,7 @@
 								</ul>
 							</div>
 							<div class="flex flex-col sm:flex-row sm:justify-between gap-2 mt-4">
-								<a href="https://alumnosulpgc-my.sharepoint.com/:v:/g/personal/alejandro_arzola101_alu_ulpgc_es/EUy2rvBCt3xHuL43LCZ3KiQBXAQ65ZDMK9vLNJwO8dIiCQ?e=Wkp5kH" target="_blank" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg text-sm font-semibold transition duration-300 shadow text-center">
+								<a href="https://alumnosulpgc-my.sharepoint.com/:v:/g/personal/alejandro_arzola101_alu_ulpgc_es/EUy2rvBCt3xHuL43LCZ3KiQBXAQ65ZDMK9vLNJwO8dIiCQ?e=Wkp5kH" target="_blank" class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg text-sm font-semibold transition duration-300 shadow text-center">
             Zona Demo
           </a>
 								<a href="https://github.com/AlejandroDavidArzolaSaavedra/Vehicle-Management-App" target="_blank" class="bg-gray-800 hover:bg-gray-900 text-white px-4 py-2 rounded-lg text-sm font-semibold transition duration-300 shadow text-center">
@@ -623,7 +629,7 @@
 								</ul>
 							</div>
 							<div class="flex flex-col sm:flex-row sm:justify-between gap-2 mt-4">
-								<a href="https://alumnosulpgc-my.sharepoint.com/:v:/g/personal/alejandro_arzola101_alu_ulpgc_es/EdmrxSF0e9ZMp0RtAkHCv0oBGzbIx3aV07458a__J93Pig?e=XJlu4T" target="_blank" class="bg-purple-500 hover:bg-purple-600 text-white px-4 py-2 rounded-lg text-sm font-semibold transition duration-300 shadow text-center">
+								<a href="https://alumnosulpgc-my.sharepoint.com/:v:/g/personal/alejandro_arzola101_alu_ulpgc_es/EdmrxSF0e9ZMp0RtAkHCv0oBGzbIx3aV07458a__J93Pig?e=XJlu4T" target="_blank" class="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-lg text-sm font-semibold transition duration-300 shadow text-center">
             Zona Demo
           </a>
 								<a href="https://github.com/AlejandroDavidArzolaSaavedra/Face-Recognition-IA" target="_blank" class="bg-gray-800 hover:bg-gray-900 text-white px-4 py-2 rounded-lg text-sm font-semibold transition duration-300 shadow text-center">
@@ -652,7 +658,7 @@
 								</ul>
 							</div>
 							<div class="flex flex-col sm:flex-row sm:justify-between gap-2 mt-4">
-								<a href="https://alumnosulpgc-my.sharepoint.com/:v:/g/personal/alejandro_arzola101_alu_ulpgc_es/EWBzy82l9UVCmTDhEXWkvBQByy9xsp4f4ji7TX3fdTv-xA?e=uMtuIe" target="_blank" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-semibold transition duration-300 shadow text-center">
+								<a href="https://alumnosulpgc-my.sharepoint.com/:v:/g/personal/alejandro_arzola101_alu_ulpgc_es/EWBzy82l9UVCmTDhEXWkvBQByy9xsp4f4ji7TX3fdTv-xA?e=uMtuIe" target="_blank" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-semibold transition duration-300 shadow text-center">
             Zona Demo
           </a>
 								<a href="https://github.com/AlejandroDavidArzolaSaavedra/TuneWave" target="_blank" class="bg-gray-800 hover:bg-gray-900 text-white px-4 py-2 rounded-lg text-sm font-semibold transition duration-300 shadow text-center">
@@ -733,7 +739,7 @@
 					</div>
 
 				</div>
-			</div>
+			</main>
 
 			<footer class="text-center text-gray-600 dark:text-gray-400 text-lg py-6">
 				<p>©2025 Alejandro David Arzola Saavedra</p>
